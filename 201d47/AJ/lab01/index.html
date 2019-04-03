@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>  
+   <title>Prompt and Response HW</title>
+</head>
+<body>
+   <h1 style = "background: rgb(0, 195, 255); color: white; font-size: 60px;">Class 01 Lab</h1>
+   <p>
+   <ol>
+      <li style = "color: rgb(35, 196, 35); font-size: 30px;">Hey, what's your name?</li>
+      <li style = "color: rgb(235, 19, 19); font-size: 30px;">Nice to meet you, (user input), where are you from?</li>
+      <li style = "color: rgb(252, 170, 17); font-size: 30px;">Cool, I hear the weather in (user input) is nice this time of year. What do you do for work?</li>
+      <li style = "color: rgb(11, 8, 235); font-size: 30px;">Sounds like a tough job, what do you like to do in your off time?</li>
+   </ol>
+   </p>
+<script>
+   var getName = prompt('Please enter name to continue');
+   var getHometown = prompt("Nice to meet you "  +  getName  + " , where are you from?");
+   var getJob = prompt('Cool, I hear the weather in '  +  getHometown  +  ' is nice this time of year. What do you do for work?');
+   var getHobby = prompt('Sounds like a tough job, what do you like to do in your off time?');
+        
+   var sayGoodbye = alert("Wow, a " + getHobby + " enthusiast from " + getHometown + " that does " + getJob + 
+                               " for a living. How lame!");    
+
+   var getHug = confirm("Just kidding, would you like a hug?")
+        
+   if(getHug){
+       alert("bring it in buddy, don't break the monitor")
+           } else{
+               alert('Wow, way to hold a grudge')
+            };
+  console.log('variable values:', {getName}, {getHometown}, {getJob}, {getHobby}, sayGoodbye, {getHug});
+</script>
+</body>
+</html>
