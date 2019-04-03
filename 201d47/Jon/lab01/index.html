@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 1: Guess your name</title>
+</head>
+<style>
+    main h1 {color:royalblue;
+            background-color: orange;
+            }
+</style>
+<main>
+    <h1>Class Lab 1</h1>
+</main>
+<body>
+    <h2>Question 1</h2>
+        <p style = "color:green;">What is your favorite Zodaic Sign?</p>
+    <h2>Question 2</h2>
+        <p style = "color:tomato;">Where did you grow up?</p>
+    <h2>Question 3</h2>
+        <p style = "color:yellowgreen;">How much do you like coding?</p>
+    <h2>Queston 4</h2>
+        <p style = "color:teal;">Are you excited about summer?</p>
+        
+
+<script>
+var nameOutput = new Array('Nathan','Bob','Sue','Mary','Ulysses','Lola','Newton','Fred','Toto','Greeg');
+
+
+var zodaicQuestion = prompt("What is your favorite Zodaic Sign?");
+var growUpQuestion = prompt("Where did you grow up?");
+var codingQuestion = prompt("How much do you like coding on a scale from 1-10?");
+    codingQuestion = codingQuestion - 1;
+var isSummerExcited = confirm("Are you excited about summer?");
+
+
+alert("You think " + zodaicQuestion + " is the best sign and you grew up in " + growUpQuestion + " with a " + codingQuestion + " for coding. Also being " + isSummerExcited + " to summer your name must be " + nameOutput[codingQuestion]); 
+
+console.log("The user thinks that " + zodaicQuestion + " is the best sign and they were bought up in " + growUpQuestion + " they like coding " + codingQuestion + " and are excited for summer " + isSummerExcited);
+
+</script>
+</body>
+
+
+</html>

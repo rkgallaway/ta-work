@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <header>
+        <title>Class 1 Lab</title>
+    </header>
+  
+       
+        
+        <main>
+            <style>
+            main {background-color: lightyellow;
+            border: 8px dashed black;
+            }
+            h1 {background-color: yellow;
+            color:tomato;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 4px solid grey;
+            text-align: center;
+            
+            }
+            p {text-align: center;
+
+
+            }
+            
+
+            
+            </style>
+            <h1>Class 1 Lab</h1>
+                <p style = color:blue;> You like to play a game?</p>
+                <p style = color:chartreuse;> Great! What game would you like to play?</p>
+                <p style = color:crimson;> Where do you like to play this game?</p>
+                <p style = color:darkgreen;> Is there any special equipment you need to play??</p>
+                <p style = color:mediumvioletred;> Since were pals now, can I have your SSN?</p>
+            
+        </main> 
+        
+    <script>
+         var startGame = "Hello There!";
+         alert(startGame);
+         var isGameQuerry = confirm("Would You Like to Play a Game?");
+         var getGameResponce = prompt("Great! What game would you like to play?");
+    
+         var gameLike = "Fantastic! I also love " + getGameResponce + "!!!";
+         alert(gameLike);
+        var gameLoc = prompt("Where do you like to play this game?");
+        alert("Oh Sweet! A lot of people like to play at " + gameLoc);
+        var gameEquip = prompt("Is there any special equipment you need to play " + getGameResponce + "??");
+         alert("!! It's too Dangerous to go Alone! Here take This " + gameEquip + "  !!!");
+         var isSsn = confirm("Since we're pals now, and i gave you this nice " + gameEquip + " and I know how much you like to play at " + gameLoc + " Think I could get your SSN?");
+          if (isSsn == true ){
+         prompt("You can leave it right here. Thanks! Love ya!")
+         } else {
+             alert("Sad Face!!");
+         }
+   console.log("The user likes " + gameLike + "They Play at " + gameLoc + "They need " + gameEquip + "they want to give us their SSN" + isSsn + "The number is " + enterSSn);
+    </script>
+    <footer>
+        
+    </footer>
+    </body>
+
+</html>

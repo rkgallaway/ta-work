@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is my first website</title>
+        <style>
+        h1 {color: rgb(255, 0, 212);
+            background-color:slateblue;}
+        </style>
+    </head>
+    <body>
+        <h1 style>Class 1 Lab</h1>
+        <script>
+        var name = prompt("Hello user what's your name?");
+        var birthPlace = prompt("Hello " + name + " where were you born?");
+        var age =  prompt("How old are you " + name + "?" );
+        var friend =  confirm("Are we friends " + name + "?");
+        if(friend){
+            alert("Thanks for being my friend " + name + " from " + birthPlace + " who has been on this earth for " + age + " years")
+            } else {alert("Sorry we cant be friends " + name)};
+        console.log(name, birthPlace, age, friend);
+        </script>
+        <p style="color:red;background-color:tan">Hello user what's your name?</p>
+        <p style="color:white;background-color:black">Where were you born?</p>
+        <p style="color:rgb(19, 163, 31);background-color:rgb(158, 52, 52)">How old are you?</p>
+        <p style="color:rgb(130, 194, 26);background-color:rgb(141, 8, 130)">Are we friends?</p>
+    </body>
+
+</html>
