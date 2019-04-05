@@ -1,7 +1,18 @@
 # ta-work
 
 ## Ryan Gallaway TA work
-* this repositroy contains assignments related to the various course(s) I have TAed.  No grades or sensitive info is included, my solution code is kept seperately and information deleted when appropriate.
+* This repositroy contains assignments submissions related to the various course(s) I have TAed.  No grades or sensitive info is included, my solution code is kept seperately and information deleted when appropriate.  None of my comments represent official solution code, they merely reflect my opinion and suggestion at the moment based on my ability and (some) relevant class instruction at that current point in time.
+* The value of this repo is in the comments I have made on the code of my students. Both helping myself to read other code bases more efficiently and to lend my knowledge to the students. While giving feedback in canvas.instucture, I have found that too much can be overwhelming.  So instead I give what I feel most relevant or what is least talked about depending on the needs of the student.  In maintaining this record, I have reference code for what is going on with each lab.  I am able to offer advice, and at an appropriate time I am able to (possibly)let the students see their file and use it to further their learning / enhance their experience.
 
 ### 201d47
-* 4/01/19 - 4/28/19
+* 4/01/19 - 4/28/19 Students (no personal information is shared):
+  * Trae [GitHub Repo:](https://github.com/TraeBenn22)
+  * Brad [GitHub Repo](https://github.com/BGElliot206)
+  * Gabriel [GitHub Repo](https://github.com/DizzyGee0013)
+  * AJ [GitHub Repo](https://github.com/AlvianJoseph)
+  * Steven [GitHub Repo](https://github.com/WittyK)
+  * Josh [GitHub Repo](https://github.com/lilbonito)
+  * Jon [GitHub Repo](https://github.com/RevYolution)
+  * Raven [GitHub Repo](https://github.com/ravewillow6383)
+  * Richard [GitHub Repo](https://github.com/Richard0923)
+  * Rob [GitHub Repo](https://github.com.rtanner90)
