@@ -131,8 +131,7 @@ function guessForQuestion7(){
     }
   }
 }
-// guessForQuestion7();
+guessForQuestion7();
 alert('Congrats you got ' + correctAnswerCount + ' answers correct out of 7.');
 // can you assign functions to items in an array
 
-guessForQuestion7();
