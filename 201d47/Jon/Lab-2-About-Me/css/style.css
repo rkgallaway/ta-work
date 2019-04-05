@@ -1,0 +1,23 @@
+body {
+    background-color: gray;
+}
+h1 {
+    font-family: sans-serif;
+    font-size: 100px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+p {
+    font-size: 50px;
+    color: blueviolet;
+    font-style: italic;
+}
+ol {
+    list-style: decimal;
+    margin: 5px;
+}
+ol li {
+    font-size: 35px;
+    color: orange;
+    margin: 5px;
+}

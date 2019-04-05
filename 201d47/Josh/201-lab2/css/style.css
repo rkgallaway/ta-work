@@ -1,0 +1,17 @@
+body {
+    align-items: center;
+    background-color:lightskyblue;
+}
+h1 {
+    color:white;
+    font-size: 85px;
+    text-align: left;
+    background-color: rgb(60, 4, 112);
+    border: 8px rgb(200, 96, 113) solid;
+    margin-top: 22px;
+    text-align: right;
+} 
+
+
+
+

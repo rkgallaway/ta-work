@@ -1,0 +1,4 @@
+[core]
+	editor = \"C:\\Users\\drbot\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+[winUpdater]
+	recentlySeenVersion = 2.21.0.windows.1
