@@ -1,96 +1,91 @@
-'use strict'
-//Confirming that the user wants to play the game
-var correctAnswerCount = 0 //counts the number of times you get an answer correct
-// var intro = confirm('Quick get ready want to play guessing game? Only Answer with Y and N');
-// fdjsalkfasd
+'use strict';
+var correctAnswerCount = 0;
 
-var myJob = function (){
-  var x = prompt('Did i work in the navy?').toUpperCase();
-  if(x === 'Y' || x === "YES"){
+var intro = confirm('Quick get ready want to play guessing game? Only Answer with Y and N');
+function myJob(){
+  var usersAnswer = prompt('Did i work in the navy?').toUpperCase();
+  if(usersAnswer === 'Y' || usersAnswer === 'YES'){
     alert('Wrong Answer Sorry');
-  } 
-  else if(x === 'N'|| x === "NO"){
+  }
+  else if(usersAnswer === 'N'|| usersAnswer === 'NO'){
     alert('Good job you guessed right!');
+    correctAnswerCount++;
   }
   else{ alert('Sorry but you didnt follow my instructions please only answer with\
      Y and N.');
-  } 
-           
-  console.log('myJob', x);
+  }
+  console.log('myJob', usersAnswer);
 }
-
-
 myJob();
-
 //What is my age question
-var myAge = function () {
-
-  var x = prompt('Is my age 22').toUpperCase();
-  if(x === 'Y' || x === 'YES'){
+var myAge = function() {
+  var usersAnswer = prompt('Is my age 22').toUpperCase();
+  if(usersAnswer === 'Y' || usersAnswer === 'YES'){
     alert('Good job you guessed right!');
-  } 
-  else if(x === 'N' || x === "NO"){
+    correctAnswerCount++;
+  }
+  else if(usersAnswer === 'N' || usersAnswer === 'NO'){
     alert('Wrong Answer Sorry');
   }
   else{ alert('Sorry but you didnt follow my instructions please only answer with\
-                 Y and N.');
-  } 
-  console.log('myAge:', x);
-}  
+            Y and N.');
+  }
+  console.log('myAge:', usersAnswer);
+};
 myAge();
 
 //Do i love tequila question
-var myLoveForTequila = function(){
+function myLoveForTequila(){
   var x = prompt('Do i love tequila?').toUpperCase();
   if(x === 'Y'|| x === 'YES'){
-    alert("Of course who doesn't love tequila");
-            
+    alert('Of course who doesn\'t love tequila');
+    correctAnswerCount++;
   }
   else if(x === 'N'|| x === 'NO'){
     alert('Sorry to tell you but I do.');
   }
   else{ alert('Sorry but you didnt follow my instructions please only answer with\
-            Y and N.');
-  } 
+        Y and N.');
+  }
   console.log('myLoveForTequila:', x);
 }
 myLoveForTequila();
 
 //Allergy question
-var myAllergy = function() {
-
-  var x = prompt('Am I allergic to anything?').toUpperCase();  
+function myAllergy() {
+  var x = prompt('Am I allergic to anything?').toUpperCase();
   if(x === 'Y' || x === 'YES'){
     alert('Correct im allergic to mosquitos');
-  } 
+    correctAnswerCount++;
+  }
   else if(x === 'N' || x === 'NO'){
     alert('Incorrect im allergic to mosquitos');
-  } 
+  }
   else{
     alert('Sorry but you didnt follow my instructions please only answer with\
-                 Y and N.');
-  } 
+            Y and N.');
+  }
   console.log('myAllergy:', x);
 }
 myAllergy();
-    
-// //Did i go to college question
-var myEducation = function() {
 
+// //Did i go to college question
+function myEducation() {
   var x = prompt('Did i go to college?').toUpperCase();
   if(x === 'Y' || x === 'YES'){
     alert('Correct but i dropped out.');
-    count++;
-  } 
+    correctAnswerCount++;
+  }
   else if(x === 'N' || x === 'NO'){
     alert('Incorrect I did but i dropped out.');
-  } 
+  }
   else alert('Sorry but you didnt follow my instructions please only answer with\
-                 Y and N.'); 
+        Y and N.');
   console.log('Did i go to college?', x);
+
 }
 myEducation();
-    
+
 //Number guessing question six
 function guessesForQuestion6() {
   var x = 4;
@@ -100,7 +95,8 @@ function guessesForQuestion6() {
     x--;
     if(usersNumber === 7){
       alert('You guessed correct.');
-    } 
+      correctAnswerCount++;
+    }
     else if(usersNumber > 7){
       alert('Too High, you have ' + x + ' guesses remaining.');
     }
@@ -110,10 +106,10 @@ function guessesForQuestion6() {
   }
 }
 guessesForQuestion6();
-    
+
 //seventh question
-var guessForQuestion7 = function() {
-  var x = 6
+function guessForQuestion7(){
+  var x = 6;
   var myHome = ['PUERTO RICO', 'FLORIDA', 'GEORGIA', 'KOREA'];
   var yourGuessStatus = false;
   while(x > 0 && !yourGuessStatus){
@@ -123,6 +119,7 @@ var guessForQuestion7 = function() {
       if(yourGuess === myHome[i]){
         alert('You guessed correct.');
         yourGuessStatus = true;
+        correctAnswerCount++;
       }
     }
     x--;
@@ -132,7 +129,10 @@ var guessForQuestion7 = function() {
     if(x === 0){
       alert('Your out of guesses.');
     }
-  }   
+  }
 }
+// guessForQuestion7();
+alert('Congrats you got ' + correctAnswerCount + ' answers correct out of 7.');
+// can you assign functions to items in an array
+
 guessForQuestion7();
-    
