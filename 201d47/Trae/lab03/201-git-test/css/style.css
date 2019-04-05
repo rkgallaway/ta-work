@@ -1,0 +1,16 @@
+body {
+    background-color: grey
+}
+
+.about-section {
+    margin: 15px;
+    font-family: monospace;
+
+}
+
+h1 { font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+
+h2 {font-family: cursive;
+background-color: black;
+color: red;}

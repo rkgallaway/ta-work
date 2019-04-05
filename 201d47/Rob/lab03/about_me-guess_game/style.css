@@ -1,0 +1,14 @@
+head{
+    padding: 10%
+}
+
+body{
+    background: teal;
+    margin: 7cm;
+    border: 0.5cm, black;
+    padding: 5%
+}
+
+h1{
+    font: bold, underline, 1cm;
+}

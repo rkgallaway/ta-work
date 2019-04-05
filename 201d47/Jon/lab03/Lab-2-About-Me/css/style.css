@@ -1,0 +1,46 @@
+body {
+    background-color: gray;
+}
+h1 {
+    font-family: sans-serif;
+    font-size: 100px;
+    color: whitesmoke;
+    font-weight: bold;
+    border: 2px solid black;
+    margin: 10px;
+}
+h2 {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+    font-style: normal;
+}
+p {
+    font-size: 50px;
+    color: blueviolet;
+    font-style: italic;
+    margin: 20, 5, 20, 5;
+}
+ol {
+    list-style: decimal;
+    margin: 5px;
+}
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+  ol li {
+    margin-left: 15px;
+    color: orange;
+  }
+  ul {
+      list-style-type: disc;
+      margin-left: 5px;
+  }
+  ul li {
+      margin-left: 15px;
+      color: purple;
+  }
+  a {
+      font-style: italic;
+  }
