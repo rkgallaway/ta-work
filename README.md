@@ -15,4 +15,4 @@
   * Jon [GitHub Repo](https://github.com/RevYolution)
   * Raven [GitHub Repo](https://github.com/ravewillow6383)
   * Richard [GitHub Repo](https://github.com/Richard0923)
-  * Rob [GitHub Repo](https://github.com.rtanner90)
+  * Rob [GitHub Repo](https://github.com/RTanner90)

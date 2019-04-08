@@ -1,0 +1,64 @@
+body {
+    background-image: url(../img/background-homepage.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+nav {
+    position: fixed;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style-type: circle;
+    background-color: none;
+}
+.navbar {
+    display: inline;
+    margin-right: 10px;
+}    
+
+h1 {
+    font-family: sans-serif;
+    font-size: 100px;
+    color: whitesmoke;
+    font-weight: bold;
+    border: 2px solid black;
+    margin: 10px;
+    display: center;
+}
+h2 {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+    font-style: normal;
+}
+p {
+    font-size: 50px;
+    color: blueviolet;
+    font-style: italic;
+    margin: 20, 5, 20, 5;
+}
+ol {
+    list-style: decimal;
+    margin: 5px;
+}
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    background-color: hsla(240, 1%, 47%, 0.5);
+  }
+  ol li {
+    margin-left: 15px;
+    color: white;
+  }
+  ul {
+      list-style-type: disc;
+      margin-left: 5px;
+  }
+  ul li {
+      margin-left: 15px;
+      color: black;
+  }
+  a {
+      font-style: italic;
+  }
