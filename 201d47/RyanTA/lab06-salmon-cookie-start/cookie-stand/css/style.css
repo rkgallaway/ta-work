@@ -1,0 +1,150 @@
+body {
+    background-color: rgba(253, 211, 171, .10);
+    color: rgba(143, 71, 5, .75);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+table {
+    background-color: rgba(253, 211, 171, .50);
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 75px;
+    text-align: center;
+    border: 2px solid rgb(233, 132, 38);
+    border-collapse: separate;
+}
+
+td {
+    border: 1px solid rgba(233,132,38, .75);
+    padding: 2px;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+th {
+    border: 1px solid rgba(233,132,38, .75);
+    padding: 2px;
+    margin: 2px;
+    color: rgba(143, 71, 5, .99);
+}
+
+#store-form {
+    background-color: rgba(253, 211, 171, .75);
+    border: 2px solid rgb(233, 132, 38);
+    width: 960px;
+    margin: 0px auto;
+    height: 100px;
+    align-content: center;
+}
+
+header {
+    border: 2px solid rgb(233, 132, 38);
+    align-items: center;
+    height: 199px;
+    margin: 0px auto;
+    width: 960px;
+}
+
+header img {
+    float: left;
+}
+
+h1 {
+    color:  rgba(233,132,38, .99);
+    font-size: 45px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+h2 {
+    color:  rgba(233,132,38, .99);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+header img {
+    border: 8px solid rgb(233, 132, 38);
+}
+
+legend {
+    border: 2px solid rgb(233, 132, 38);
+    background-color: rgba(253, 211, 171, .99);
+}
+
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+legend {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.italics {
+    font-style: italic;
+}
+
+main {
+    width: 960px;
+    margin: 0px auto; 
+}
+
+main div {
+    float: left;
+    width: 320px;
+    height: 320px;
+    align-content: center;
+}
+a {
+    color: rgba(143, 71, 5, .99);
+}
+
+p {
+    color: rgba(143, 71, 5, .99);
+    line-height: 25px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.family {
+    margin-top: 50px;
+}
+
+#ul-left {
+    text-align: right;
+    list-style-type: none;
+    padding: 10px;
+}
+.t-italics {
+    font-style: italic;
+    width: 279px;
+}
+
+ul {
+    color: rgba(143, 71, 5, .99);
+   
+
+}
+
+.address {
+    color: rgba(143, 71, 5, .99);
+    list-style-type: none;
+    margin-left: 20px;
+}
+  
+footer {
+    width: 960px;
+    margin: 0px auto;
+    align-content: center;
+}
+
+footer img {
+    margin-left: 86px;
+}
+ 
