@@ -29,16 +29,20 @@ var firstAndPike = {
     }
   },
   render: function (){
+    //Ryan grab element from the DOM
     var ulElement = document.getElementById(this.id);
+
     for (var i = 0; i < this.cookiesPerHour.length; i++) {
       var liElement = document.createElement('li');
       liElement.textContent = `${hours[i]}: ${this.cookiesPerHour[i]} cookies`;
       ulElement.appendChild(liElement);
     }
+
     liElement.textContent = `Total Cookies Sold ${this.totalCookies}`;
     ulElement.appendChild(liElement);
   }
 }
+
 
 var seaTac = {
   id: 'sea-tac',
