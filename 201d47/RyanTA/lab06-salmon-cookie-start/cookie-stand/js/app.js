@@ -2,18 +2,6 @@
 
 var hours = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm', '8 pm'];
 
-// Ryan - The maximum is inclusive and the minimum is inclusive
-function custCount(min, max){
-  return Math.floor(Math.random() * (max - min + 1)) + min; 
-}
-
-function dailyStoreTotals(storeObject){
-  for (var i = 0; i < hours.length; i++) {
-    storeObject.cookiesPerHour.push(Math.ceil(custCount(storeObject.minGuest, storeObject.maxGuest) * storeObject.avgPerGuest))
-  }
-  storeObject.sumOfCookies();
-  storeObject.render();
-}
 
 // Ryan - Each store object with methods render li elements to the DOM
 var firstAndPike = {
@@ -29,18 +17,29 @@ var firstAndPike = {
     }
   },
   render: function (){
-    //Ryan grab element from the DOM
     var ulElement = document.getElementById(this.id);
-
     for (var i = 0; i < this.cookiesPerHour.length; i++) {
       var liElement = document.createElement('li');
       liElement.textContent = `${hours[i]}: ${this.cookiesPerHour[i]} cookies`;
       ulElement.appendChild(liElement);
     }
-
     liElement.textContent = `Total Cookies Sold ${this.totalCookies}`;
     ulElement.appendChild(liElement);
+  },
+  custCount: function(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  },
+  dailyStoreTotals: function(){
+    for (var i = 0; i < hours.length; i++) {
+      this.cookiesPerHour.push(Math.ceil(this.custCount(this.minGuest, this.maxGuest) * this.avgPerGuest))
+    }
+  },
+  dailyStats: function(){
+    this.dailyStoreTotals();
+    this.sumOfCookies();
+    this.render();
   }
+
 }
 
 
@@ -65,6 +64,19 @@ var seaTac = {
     }
     liElement.textContent = `Total Cookies Sold ${this.totalCookies}`;
     ulElement.appendChild(liElement);
+  },
+  custCount: function(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  },
+  dailyStoreTotals: function(){
+    for (var i = 0; i < hours.length; i++) {
+      this.cookiesPerHour.push(Math.ceil(this.custCount(this.minGuest, this.maxGuest) * this.avgPerGuest))
+    }
+  },
+  dailyStats: function(){
+    this.dailyStoreTotals();
+    this.sumOfCookies();
+    this.render();
   }
 }
 
@@ -89,6 +101,19 @@ var seaCenter = {
     }
     liElement.textContent = `Total Cookies Sold ${this.totalCookies}`;
     ulElement.appendChild(liElement);
+  },
+  custCount: function(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  },
+  dailyStoreTotals: function(){
+    for (var i = 0; i < hours.length; i++) {
+      this.cookiesPerHour.push(Math.ceil(this.custCount(this.minGuest, this.maxGuest) * this.avgPerGuest))
+    }
+  },
+  dailyStats: function(){
+    this.dailyStoreTotals();
+    this.sumOfCookies();
+    this.render();
   }
 }
 
@@ -113,6 +138,19 @@ var capitolHill = {
     }
     liElement.textContent = `Total Cookies Sold ${this.totalCookies}`;
     ulElement.appendChild(liElement);
+  },
+  custCount: function(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  },
+  dailyStoreTotals: function(){
+    for (var i = 0; i < hours.length; i++) {
+      this.cookiesPerHour.push(Math.ceil(this.custCount(this.minGuest, this.maxGuest) * this.avgPerGuest))
+    }
+  },
+  dailyStats: function(){
+    this.dailyStoreTotals();
+    this.sumOfCookies();
+    this.render();
   }
 }
 
@@ -137,11 +175,25 @@ var alki = {
     }
     liElement.textContent = `Total Cookies Sold ${this.totalCookies}`;
     ulElement.appendChild(liElement);
+  },
+  custCount: function(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  },
+  dailyStoreTotals: function(){
+    for (var i = 0; i < hours.length; i++) {
+      this.cookiesPerHour.push(Math.ceil(this.custCount(this.minGuest, this.maxGuest) * this.avgPerGuest))
+    }
+  },
+  dailyStats: function(){
+    this.dailyStoreTotals();
+    this.sumOfCookies();
+    this.render();
   }
 }
 
-dailyStoreTotals(firstAndPike);
-dailyStoreTotals(seaTac);
-dailyStoreTotals(seaCenter);
-dailyStoreTotals(capitolHill);
-dailyStoreTotals(alki);
+firstAndPike.dailyStats();
+seaTac.dailyStats();
+seaCenter.dailyStats();
+capitolHill.dailyStats();
+alki.dailyStats();
+
