@@ -31,7 +31,7 @@ var firstAndPike = {
   },
   dailyStoreTotals: function(){
     for (var i = 0; i < hours.length; i++) {
-      this.cookiesPerHour.push(Math.ceil(this.custCount(this.minGuest, this.maxGuest) * this.avgPerGuest))
+      this.cookiesPerHour.push(Math.ceil(this.custCount(this.minGuest, this.maxGuest) * this.avgPerGuest));
     }
   },
   dailyStats: function(){
