@@ -1,0 +1,29 @@
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: hsla(209, 94%, 41%, 0.5);
+    background-image: url(../img/salmon.jpeg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: top 50px, right 100px, bottom 50px, left 100px;
+}
+body {
+    background-color: hsla(240, 25%, 42%, 0.5);
+}
+h2 {
+    font-family: 'Dokdo', cursive;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+ul {
+    font-family: 'Indie Flower', cursive;
+    margin: 2px;
+}
+li {
+    margin: 2px;
+}
