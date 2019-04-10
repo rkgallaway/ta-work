@@ -60,14 +60,13 @@ function tableGenerator(){
   }
 }
 
-//DRY function for table
+//DRY function for table --for class lab 8
 function newElement(type, content, parent){
   var element = document.createElement(type);
   element.textContent = content;
   parent.appendChild(element);
 }
 
-// Ryan - Each store object with methods render li elements to the DOM
 function StoreConstructor(id, minGuest, maxGuest, avgPerGuest){
   this.id = id;
   this.minGuest = minGuest;
