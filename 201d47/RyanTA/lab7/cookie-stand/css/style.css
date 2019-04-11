@@ -2,13 +2,14 @@ body {
     background-color: rgba(253, 211, 171, .10);
     color: rgba(143, 71, 5, .75);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px auto;
 
 }
 
 table {
     background-color: rgba(253, 211, 171, .50);
     width: 960px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 75px;
     text-align: center;
     border: 2px solid rgb(233, 132, 38);
@@ -33,7 +34,7 @@ th {
     background-color: rgba(253, 211, 171, .75);
     border: 2px solid rgb(233, 132, 38);
     width: 960px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     height: 100px;
     align-content: center;
 }
@@ -42,7 +43,7 @@ header {
     border: 2px solid rgb(233, 132, 38);
     align-items: center;
     height: 199px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     width: 960px;
 }
 
