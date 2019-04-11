@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background: #888;
+    height: 95px;
+}
+td{
+    border: solid 1px black;
+    border-spacing: 0.5rem;
+}
+
+table {
+    border-spacing: 0.5rem;
+    border-collapse: collapse;
+}
