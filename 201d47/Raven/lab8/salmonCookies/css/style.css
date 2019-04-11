@@ -1,0 +1,18 @@
+table, tr, td {
+    border:solid;
+}
+
+td{
+    padding: 10px;
+}
+
+form{
+    border:groove;
+    
+}
+h1 {
+    font-size: 50px;
+    color: white;
+    background-color: black
+    
+}
