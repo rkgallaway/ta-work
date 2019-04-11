@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="salmon-cookies.css">
+  <title>Salmon Cookie Sales</title>
+</head>
+
+<body>
+  <img src="img\salmon.png" alt="">
+  <table id="cookie-table">
+    <caption>Salmon Cookie Sales</caption>
+    <tbody>
+      <tfoot id="footer">
+
+      </tfoot>
+    </tbody>  
+  </table>
+  <form id="store-form" action="">
+    <fieldset>
+      <legend>Add new store</legend>
+      <label for="min-customers">Min Customers:</label>
+      <input id="mincustomers" type="number" required/>
+
+      <label for="max-customers">Max Customers:</label>
+      <input id="maxcustomers" type="number" required/>
+
+      <label for="avg-cookies-sold">Average Cookies Sold:</label>
+      <input id="avgcookiessold" type="number" required/>
+
+      <label for="store-name">Store Name:</label>
+      <input id="storename" type="text" required/>
+
+      <button id="submit">Submit</button>
+    </fieldset>
+  </form>
+  <script src="app.js"></script>
+</body>
+
+</html>
