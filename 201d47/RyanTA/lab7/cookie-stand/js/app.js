@@ -14,7 +14,7 @@ function renderHeader() {
   trElement.append(thElement);
   for(var i = 0; i < hours.length; i++){
     thElement = document.createElement('th');
-    thElement.textContent = (hours[i]);
+    thElement.textContent = hours[i];
     trElement.append(thElement);
   }
   thElement = document.createElement('th');
