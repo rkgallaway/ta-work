@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Salmon Cookies
+        </title>
+        <!-- Ryan -no css reset link -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+
+            <h1>
+                Salmon Cookies
+            </h1>
+
+            <form id ="add-new-store">
+                <fieldset>
+                    <legend>Add a new store</legend>
+
+                    <label for="storename">Store name:</label>
+                    <input id="storename" type="text" required/>
+                    <!-- Ryan type of input text or number...  or something diff for decimal -->
+                    <label for="minimumcustomers">Minimum Customers:</label>
+                    <input id="minimumcustomers" type="number" required/>
+
+                    <label for="maximumcustomers">Maximum Customers:</label>
+                    <input id="maximumcustomers" type="number" required/>
+
+                    <label for="averageookiesale">Average Cookies Sold:</label>
+                    <input id="averageookiesale" type="number" required/>
+
+                    <button>Add New Store</button>
+
+
+
+                </fieldset>
+            </form>
+            
+        </header>
+        <main>
+
+            <table id="cookie-stand"></table>
+        
+
+        </main>
+        <script src="js/app.js"> </script>
+    </body>
+</html>
+
