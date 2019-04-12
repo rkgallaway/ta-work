@@ -1,4 +1,4 @@
-// Ryan - syntax looks good, maybe watch spacing and comments for the why
+
 'use strict';
 
 var hours = [
@@ -40,8 +40,6 @@ function renderTableHeader(){
   tr.append(th);
   referenceTable.append(tr);
 }
-
-// Ryan - something smells with render footer function or cunstructor and is not behaving as expected
 function Store(location, minCustomer, maxCustomer, avgCookieSale) {
   this.minCustomer = minCustomer;
   this.maxCustomer = maxCustomer;
@@ -57,8 +55,7 @@ function Store(location, minCustomer, maxCustomer, avgCookieSale) {
 
   this.calculateValues = function (){
     for (var i = 0; i < hours.length; i++) {
-      // Ryan - hard wired Data change 23, 65 need to be variables
-      this.cookiesPerHour.push(Math.ceil(this.customerPerHour(this.minCustomer, this.maxCustomer) * this.avgCookieSale));
+      this.cookiesPerHour.push(Math.ceil(this.customerPerHour(23, 65) * this.avgCookieSale));
     }
   };
 
@@ -105,11 +102,11 @@ function renderFooter() {
   var td = document.createElement('td');
   td.textContent = ' Totals:';
   tr.append(td);
-  // Ryan - code smells check what is
-  for(var r = 0; r < hours.length; r++){
+
+  for(var i = 0; i < hours.length; i++);{
     var hourlyTotal = 0;
     for(var j = 0; j < allStores.length; j++){
-      hourlyTotal += allStores[j].cookiesPerHour[r];
+      hourlyTotal += allStores[j].cookiesPerHour[i];
     }
     grandTotal += hourlyTotal;
     td = document.createElement('td');
@@ -139,13 +136,6 @@ CapitolHill.dailyStats();
 alki.dailyStats();
 renderFooter();
 
-// Ryan - missing event handle and associated functionality
-
-
-
-
-
-
 
 
 //---------------------------------
@@ -170,34 +160,3 @@ renderFooter();
 // grayButton.addEventListener('click', onGrayButtonClick);
 
 // clearButton.addEventListener('click', onClearButtonClick);
-
-
-function function1 () {
-  var kali = 'is cute';
-  return khal;
-  var khal = 'is cute too';
-  console.log(khal);
-}
-
-function function1 () {
-  var result = add(5,6);
-
-  function add(a,b) {
-    return a + b;
-  }
-  return result;
-}
-
-function function1 () {
-  function render() {
-    return 'rendering';
-  }
-  // LINES OF CODE
-  return render();
-  // LINES OF CODE
-  function render(){
-    return 'BUGGY BUG BUG BUG';
-  }
-}
-
-function1();
