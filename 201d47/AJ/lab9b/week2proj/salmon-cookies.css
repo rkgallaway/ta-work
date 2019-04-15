@@ -1,0 +1,96 @@
+body{
+  background-color: #ffffff;
+  width: 1000px;
+}
+caption{
+  font-size: 25px;
+  background: #EBEBEB;
+}
+
+
+table {
+border: 2px solid #FFFFFF;
+text-align: center;
+border-collapse: collapse;
+width: 50%;
+position: absolute;
+left: 25%;
+top: 25%;
+display: inline-block;
+}
+table td, table th {
+border: 2px solid #FFFFFF;
+padding: 3px 4px;
+}
+table {
+font-size: 14px;
+font-weight: bold;
+}
+td:nth-child(even) {
+background: #EBEBEB;
+}
+
+th {
+font-size: 15px;
+font-weight: bold;
+color: #333333;
+text-align: center;
+border-left: 2px solid #333333;
+}
+
+tfoot {
+font-size: 16px;
+font-weight: bold;
+color: #333333;
+border-top: 3px solid #333333;
+}
+
+form{
+position: absolute;
+top: 6%;
+left: 0%;
+font-size: 20px;
+background-color: black;
+border: 3px solid black;
+width: 100%;
+color: white;
+line-height: 15px;
+}
+
+form legend{
+font-size: 25px;
+
+}
+
+nav{
+width: 100%;
+}
+
+nav ul{
+display: inline-block;
+}
+
+nav li {
+display: inline-block;
+width: 100%;
+font-size: 15px;
+}
+
+#header{
+position: absolute;
+top: 0%;
+width: 100%;
+left: 0%;
+background-color: black;
+line-height: 15px;
+margin: 0%;
+}
+
+table#header th{
+padding-left: 100px;
+padding-right: 100px;
+font-size: 20px;
+color: salmon;
+border: 5px solid white;
+width: 20%
+}

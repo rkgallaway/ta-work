@@ -1,0 +1,86 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: salmon;
+    float: inherit;
+    
+}
+h1 {
+    float: left;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    margin: 10px 20px 20px 10px;
+}
+
+table, th, tr,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 1px;
+    width:70%; 
+    margin-left:5%; 
+    margin-right:5%;
+    background-color: darkgray;
+    
+}
+fieldset {
+    border: 1px solid black;
+    text-align: left;
+    padding: 0px;
+    border: 1px solid black;
+    
+    width:10%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+#new-store{
+    float: left;
+}
+input {
+    padding: 10px;
+    background-color: aqua;
+    margin: 10px;
+}
+ul {
+    margin: 1%;
+}
+#salmon {
+    animation-duration: 3s;
+    animation-name: slideout;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes slideout{
+    from {
+        margin-left: 0%;
+        width: 50%; 
+      }
+      to {
+        margin-left: 75%;
+        width: 50%;
+        animation-play-state: running; 
+      }
+    
+}
+#topbar {
+    padding: 0%;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+}
+nav li {
+    display: inline-block;
+    padding: 15px 20px 0px 10px;
+    height: 35px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
+  nav h1 {
+    float: left;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    margin: 10px 20px 20px 10px;
+}
+
+    
