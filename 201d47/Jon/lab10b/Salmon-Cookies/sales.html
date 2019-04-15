@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<title>Salmon Cookies</title>
+    </head>
+<header>
+    <h1>Salmon Cookies</h1>
+</header>
+<body>
+    <table id="cookie-table"></table>
+    <tfoot id="cookiefoot"></tfoot>
+    <form id="cookieform">
+     <fieldset>
+            <legend>Add New Store</legend>
+            <label for="storename">Store Name:
+                <input type="text" id="storename" required/>
+            </label>
+            <label for="mincustomers">Minimum Customers
+                <input type="number" id="mincustomers" required/>
+            </label>
+            <label for="maxcustomers">Maximun Customers
+                    <input type="number" id="maxcustomers" required/>
+                </label>    
+            <label for="avgcookies">Average Cookies Bought Per Customer
+                <input type="float" id="avgcookies" required/>
+            </label>
+            <button id="submit">Add Store</button>
+        </fieldset>
+    </form>
+        
+     <script src="js/app.js"></script>
+</body>
+
+</html>

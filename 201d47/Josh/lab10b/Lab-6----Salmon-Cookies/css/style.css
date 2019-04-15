@@ -1,0 +1,299 @@
+
+body{
+    background-image: url("../img/pnw-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+    
+.header{
+    display: block;
+    margin-bottom: 30px;
+    margin-left: -7.5%;
+    
+}   
+
+.nav-container{
+
+    position: absolute;
+    float: right;
+    height: 20px;
+    padding-left: 70px;
+    padding-right: 50px;
+    right: 50px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    top: 30px;
+}
+
+
+nav ul{
+    bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+nav li{
+    margin-bottom: 20px;
+    display:inline-block;
+    color: black;
+    margin-top: 20px;
+    font-size: 1.2em;
+    margin-left: -25px;
+    margin-right: 50px;
+}
+ul:hover{
+    font-weight: 900;
+    transition: 350ms;
+    text-shadow: -5px 5px 10px rgba(3,43,16,1);
+
+}
+
+h1{
+    float: unset;
+    position: absolute;
+    left: 400px;
+    top: 150px;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1em;
+    font-size: 60px;
+}
+    
+.page-title{
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: .6em;
+    font-size: 60px;
+    float: left;
+    margin: 10px;
+}
+
+h4{
+    font-style: italic;
+    position: absolute;
+    font-size: 16px;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    float: center;
+    margin-top: 275px;
+    opacity: .85;
+}
+
+ #left{
+     margin-right: 24px;
+     border: 8px solid #db8700;
+     box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);
+}
+
+#mid:hover + #welcome-text{
+    opacity: 1;
+}
+#mid{
+    border: 8px solid #db8700;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);
+}
+#right{
+    margin-left: 24px;
+    border: 8px solid #db8700;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);
+} 
+
+#welcome-text:hover{
+    opacity: 1;
+}
+
+#welcome-text{
+    margin-left: 75px;
+    text-shadow: -5px 5px 10px rgba(3,43,16,1);
+    position: absolute;
+    top: 40%;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    transition: 1.0s;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1.5em;
+    font-size: 100px;
+    font-weight: 900
+}
+
+.fitbit{
+    isolation: isolate;
+    float:right;
+    position: absolute;
+    display: inline-block;
+    top: 30px;   
+}
+
+.info{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+    opacity: .50;    
+    bottom: 50px; 
+    right: 0px; 
+    text-shadow: -5px 5px 10px rgba(3,43,16,1);
+}
+.info-sales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px; 
+    margin-left: -20;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+    opacity: .50;
+    bottom: 25px;      
+}
+
+#street{
+    margin-right: 100px;
+}
+#city{    
+}
+#phone{
+    margin-left: 100px;
+}
+
+fieldset{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    border:2px solid #db8700;
+    width: 200px;
+    font-size: 20;
+    background-color: rgba(3,43,16,.25);
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+}
+td, tr{
+    border: 2px solid black;
+    font-size: 30px;
+    background-color: rgba(3,43,16,.25);
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 1px gray;
+    text-shadow: -5px 5px 10px rgba(3,43,16,1);
+    overflow: auto;
+}
+table{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 500px;
+    display: inline-block;
+    border: 6px solid #db8700;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+    margin-left: 20%;
+    margin-right: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    overflow: auto;
+}
+
+.merch-items{
+    position: absolute;
+    bottom: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    background-color: rgba(3,43,16,.1);
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+ 
+
+}
+.merch-items h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+}
+
+.buy-now{
+    margin-top: 30px;
+    display: inline-block;
+    position: absolute;
+    vertical-align: 50%;
+    margin-top: 50px;
+    bottom: -100px;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba(3,43,16,.75);
+    width: 150px;
+    height: 30px; 
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.buy-now:hover{
+    color: black;
+    background-color: rgba(3,43,16,.25);
+    transition: 350ms;
+ 
+}    
+
+
+.family-container{
+    display: inline-block;
+    position: relative;
+}
+
+.about-us{
+    display: inline-block;
+    position: relative;
+    font-family: 'Amatic SC', cursive;
+    font-size: 38px;
+    float: left;
+    left: 150px;
+    top: 200px;
+}
+
+
+
+.about-family{
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 300px;
+    width: 600px;
+    top: 300px;
+    background-color: rgba(3,43,16,.25);
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+    overflow: auto;
+    line-height: 1.6em;
+    
+}    
+
+#family-photo{
+    display: inline-block;
+    position: relative;
+    float: right;
+    bottom: 0px;
+    left: 150px;
+    border-radius: 50% 50%;
+    
+    
+
+}
+.chinook{
+    display:inline-block;
+    position: absolute;
+    float: left;
+    top: 100px;
+    left: 430px;
+
+
+
