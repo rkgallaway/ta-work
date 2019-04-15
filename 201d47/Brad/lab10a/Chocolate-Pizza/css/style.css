@@ -1,0 +1,73 @@
+* {
+  position: relative;
+  
+  max-width: 700px;
+  margin: auto;
+}
+#header {
+  margin-top: 0%;
+  display: inline-block;
+}
+#logoimg {
+  border: 10px;
+  display: inline-block;
+  z-index: 10px;
+}
+#title{
+  border: 50px;
+  border-top: 10px;
+  padding: 1px 1px 1px 1px;
+  text-align: left;
+  display: inline-block;
+
+}
+#title h1{
+  padding: 1px;
+}
+#subtitle{
+  display: inline-block;
+
+}
+#headerimg1-6{
+  display: inline-block;
+  left: 100px;
+}
+#headerimg7-8{
+  display: inline-block;
+  left: 200px;
+}
+.recipe-instructions {
+  text-indent: 40px;
+}
+.recipe .recipe2{
+  background-image: url(https://raw.githubusercontent.com/codefellows/seattle-201d47/master/class-10/lab-a/lab-assets/list-bg.png);
+
+  bottom: 50px;
+}
+  
+button{
+  background-color: red;
+  left: 500px;
+  float: left;
+}
+#footimg{
+  display: inline-block;
+
+}
+#footname{
+  display: inline-block;
+  font-size: 20px;
+}
+#header-bar {
+  border: 6px solid black;
+  background-color: rgb(58, 53, 53);
+}
+
+#footer-bar {
+border: 6px solid black;
+background-color: rgb(58, 53, 53);
+}
+
+.recipe-instructions {
+text-indent: 40px;
+}
