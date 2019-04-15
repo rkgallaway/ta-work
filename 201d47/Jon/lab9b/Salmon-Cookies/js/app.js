@@ -1,7 +1,6 @@
 'use strict';
 
 var salesTable = document.getElementById('cookie-table');
-var salesFooter = document.getElementById('cookiefoot');
 
 var allStores=[];
 var oppHours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
@@ -83,13 +82,12 @@ function footerCalculator(){
 }
 
 function renderFooter() {
-  var tFoot = document.createElement('tfoot id="cookiefoot"');
+  var tFoot = document.createElement('tfoot');
   var trElement = document.createElement('tr');
   var tdElement = document.createElement('td');
   tdElement.textContent = 'Hourly totals';
   trElement.append(tdElement);
-  for(var i = 0; i < totalPerHour.length; i++)
-  {
+  for(var i = 0; i < totalPerHour.length; i++){
     tdElement = document.createElement('td');
     tdElement.textContent = totalPerHour[i];
     trElement.append(tdElement);
@@ -98,7 +96,9 @@ function renderFooter() {
   tdElement.textContent = storeTotal;
   trElement.append(tdElement);
   tFoot.append(trElement);
-  salesTable.append(tFoot);
+  var salesFooter = document.getElementById('cookiefoot');
+
+  salesFooter.append(tFoot);
 }
 
 renderHeader();
@@ -130,9 +130,12 @@ function addNewStore(event) {
   var newStore = new Store(newStoreName, newMinimumCustomers, newMaximunCustomers, newAvgCookies);
 
   newStore.dailyStats();
-  salesFooter.textContent = 2;
 
+  var salesFooter = document.getElementById('cookiefoot');
+  salesFooter.textContent = '';
   storeTotal = 0;
+  footerCalculator();
+
   renderFooter();
 }
 

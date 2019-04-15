@@ -121,7 +121,6 @@ function renderFooter() {
   tr.append(td);
   tfoot.append(tr);
   referenceTable.append(tfoot);
-
 }
 
 
@@ -172,32 +171,32 @@ renderFooter();
 // clearButton.addEventListener('click', onClearButtonClick);
 
 
-function function1 () {
-  var kali = 'is cute';
-  return khal;
-  var khal = 'is cute too';
-  console.log(khal);
-}
+// function function1 () {
+//   var kali = 'is cute';
+//   return khal;
+//   var khal = 'is cute too';
+//   console.log(khal);
+// }
 
-function function1 () {
-  var result = add(5,6);
+// function function1 () {
+//   var result = add(5,6);
 
-  function add(a,b) {
-    return a + b;
-  }
-  return result;
-}
+//   function add(a,b) {
+//     return a + b;
+//   }
+//   return result;
+// }
 
-function function1 () {
-  function render() {
-    return 'rendering';
-  }
-  // LINES OF CODE
-  return render();
-  // LINES OF CODE
-  function render(){
-    return 'BUGGY BUG BUG BUG';
-  }
-}
+// function function1 () {
+//   function render() {
+//     return 'rendering';
+//   }
+//   // LINES OF CODE
+//   return render();
+//   // LINES OF CODE
+//   function render(){
+//     return 'BUGGY BUG BUG BUG';
+//   }
+// }
 
-function1();
+// function1();
