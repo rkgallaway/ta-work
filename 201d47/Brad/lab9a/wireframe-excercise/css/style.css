@@ -1,0 +1,43 @@
+body {
+  width: 960px;
+}
+
+header {
+  background-color: #444;
+  width: 960 px;
+  float
+}
+
+main {
+  margin: 30px;
+}
+
+nav {
+  /* Add your code here :) */
+  width: 100%;
+  background-color: #444;
+}
+
+nav img {
+  display: inline-block;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #999;
+  line-height: 70px;
+  padding: 0 34px;
+}
+
+#three-images {
+  display:inline-block;
+  margin: 30px;
+}
+ 
+.paragraph-image {
+  float; left;
+}
