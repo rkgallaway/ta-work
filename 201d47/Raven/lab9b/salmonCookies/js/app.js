@@ -92,8 +92,8 @@ function renderFooter() {
   var tdTotalFoot = document.createElement('td');
   tdTotalFoot.textContent = (grandTotal);
   trFoot.append(tdTotalFoot);
-  var salesFooter = document.getElementById('footer');
-  salesFooter.append(trFoot);
+  var referenceTable = document.getElementById('footer');
+  referenceTable.append(trFoot);
 }
 
 renderHeader();
