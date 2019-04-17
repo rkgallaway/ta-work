@@ -149,4 +149,4 @@ questionSix();
 questionSeven();
 
 alert(username + ' You got ' + correctResponses + ' out of 7. Thanks for your answers!'
-)
+);
