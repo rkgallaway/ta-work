@@ -1,23 +1,22 @@
 'use strict';
 
-// Ryan -global variables
+//create global variables
 var names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 var allProducts = [];
-var previouslyShown = ['initial', 'place', 'holders'];
 var totalClicks = 0;
-var MAX_CLICKS = 25;
+//DOM
+var container = document.getElementById('image-container');
+var left = document.getElementById('left');
+var center = document.getElementById('center');
+var right = document.getElementById('right');
+var productList = document.getElementById('product-list')
+var justViewed = [];
+
+// Arrays to hold data for the chart
 var chartVotes = [];
 var chartNames = [];
 
 
-//DOM 'windows'
-var container = document.getElementById('image-container');
-var imageOne = document.getElementById('img1');
-var imageTwo = document.getElementById('img2');
-var imageThree = document.getElementById('img3');
-
-
-// Ryan - Constructor
 function Product(name) {
   this.name = name;
   this.filepath = `img/${name}.jpg`;
@@ -26,65 +25,75 @@ function Product(name) {
   allProducts.push(this);
 }
 
-// Ryan -instances
-function createProducts(){
-  for (var i = 0; i < names.length; i++){
-    new Product(names[i]);
-  }
+
+for (var i = 0; i < names.length; i++){
+  new Product(names[i]);
 }
 
-createProducts();
-
-// Ryan - gets random allProduct index // instance
-function getRandom(){
+function makRandom(){
   return Math.floor(Math.random() * allProducts.length);
 }
 
-// Ryan - random render, but not previously shown (6) products.
-function selectivelyRender() {
-  while(previouslyShown.length > 6){
-    previouslyShown.shift();
-  }
 
-  var firstImage = getRandom();
-  while (previouslyShown.includes(firstImage)){
-    firstImage = getRandom();
-  }
+/////////////////////////////////
 
-  previouslyShown.push(firstImage);
 
-  var secondImage = getRandom();
-  while (previouslyShown.includes(secondImage)){
-    secondImage = getRandom();
-  }
-  previouslyShown.push(secondImage);
-  var thirdImage = getRandom();
+function makeThreeUnique(){
+  var output = [];
 
-  while (previouslyShown.includes(thirdImage)){
-    thirdImage = getRandom();
+  var firstNum = makRandom(); //make first
+  while(justViewed.includes(firstNum)){
+    firstNum = makRandom(); //makes first again
+
   }
-  previouslyShown.push(thirdImage);
+  output.push(firstNum);
+
+  var secondNum = makRandom(); //make first
+  while(justViewed.includes(firstNum)){
+    secondNum = makRandom(); //makes first again
+
+  }
+  output.push(secondNum);
+  while (output[0] === output[1]){
+    output[1] = makRandom();
+  }
+  // output.push(makRandom()); //make third  85 -90 var firstNum-output.push(firstNumreplaces this line w/thirdNum)
+  var thirdNum = makRandom(); //make first
+  while(justViewed.includes(firstNum)){
+    thirdNum = makRandom(); //makes first again
+
+  }
+  output.push(thirdNum);
+  while (output[0] === output[2] || output[1] === output[2]){
+    output[2] = makRandom();
+  }
+  justViewed = output;
+  return output;
 }
 
 function productRender(){
-  selectivelyRender();
-  allProducts[previouslyShown[3]].views++;
-  allProducts[previouslyShown[4]].views++;
-  allProducts[previouslyShown[4]].views++;
-  imageOne.src = allProducts[previouslyShown[3]].filepath;
-  imageTwo.src = allProducts[previouslyShown[4]].filepath;
-  imageThree.src = allProducts[previouslyShown[5]].filepath;
-  imageOne.alt = allProducts[previouslyShown[3]].name;
-  imageTwo.alt = allProducts[previouslyShown[4]].name;
-  imageThree.alt = allProducts[previouslyShown[5]].name;
-  imageOne.title = allProducts[previouslyShown[3]].name;
-  imageTwo.title = allProducts[previouslyShown[4]].name;
-  imageThree.title = allProducts[previouslyShown[5]].name;
+  var idx= makeThreeUnique();
+  allProducts[idx[0]].views++;
+  allProducts[idx[1]].views++;
+  allProducts[idx[2]].views++;
+  left.src = allProducts[idx[0]].filepath;
+  center.src = allProducts[idx[1]].filepath;
+  right.src = allProducts[idx[2]].filepath;
+  left.alt = allProducts[idx[0]].name;
+  center.alt = allProducts[idx[1]].name;
+  right.alt = allProducts[idx[2]].name;
+  left.title = allProducts[idx[0]].name;
+  center.title = allProducts[idx[1]].name;
+  right.title = allProducts[idx[2]].name;
+
 }
 
+
+
 function handleClick(event){
+  // console.log (event.target.alt, 'was clicked');
   if (event.target.id === 'image-container'){
-    alert('Please click on an image!');
+    return alert('Please click on an image!');
   }
   totalClicks++;
 
@@ -95,26 +104,35 @@ function handleClick(event){
     }
   }
 
-  if(totalClicks === MAX_CLICKS){
+  if(totalClicks === 25){
     container.removeEventListener('click', handleClick);
     updateChartArrays();
     drawChart();
+    return showList();
   }
+
   productRender();
 }
+function showList(){
+  // alert ('pretend list is showinwg');
+  for (var i = 0; i < allProducts.length; i++){
+    var liEl = document.createElement('li');
+    liEl.textContent = `${allProducts[i].name}: ${allProducts[i].views} views & ${allProducts[i].votes} votes`;
+    productList.appendChild(liEl);
+  }
+}
 
-// Ryan - initial render performed on page load
 productRender();
 
-
+//purple rain example
 function updateChartArrays() {
   for (var i = 0; i < allProducts.length; i++) {
     chartNames[i] = allProducts[i].name;
     chartVotes[i] = allProducts[i].votes;
   }
 }
+// updateChartArrays();
 
-//chart functionality
 var data = {
   labels: chartNames, // titles array we declared earlier
   datasets: [
@@ -141,7 +159,7 @@ var data = {
         'cadetblue',
         'darkred', //18
         'darkslategray',
-        'blueviolet'   
+        'blueviolet'        
       ],
       hoverBackgroundColor: [
         'darkgreen',
@@ -152,6 +170,8 @@ var data = {
       ]
     }]
 };
+
+
 
 function drawChart() {
   var ctx = document.getElementById('productChart').getContext('2d');
@@ -181,8 +201,7 @@ function drawChart() {
       }]
     }
   });
+  // chartDrawn = true;
 }
-
-
 
 container.addEventListener('click', handleClick);
