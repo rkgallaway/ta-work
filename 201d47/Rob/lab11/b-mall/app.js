@@ -198,9 +198,9 @@ var click_tracker = document.getElementById('add-clicks');
 
 click_tracker.addEventListener('click', function(){
   likeCounter++;
-  localStorage.setItem('clicksInLocalStorage', likeCounter)
+  localStorage.setItem('clicksInLocalStorage', likeCounter);  //semi was missing
   click_tracker.textContent ='clicked ${clickcount} times';
-});
+}); //paren was missing
 
 //LS
 //Setters
