@@ -1,0 +1,16 @@
+
+
+#image-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    border: 5px solid black;
+    width: 200px;
+    height:200px;
+    
+}
+#myChart{
+    max-width: 600px;;
+    max-height:auto;
+
+}
