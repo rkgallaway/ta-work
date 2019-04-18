@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Dokdo|Permanent+Marker|Rock+Salt|Special+Elite" rel="stylesheet">
+        <title>Bus Mall Research</title>
+    </head>
+    <body>
+        <header>       
+             <h1>BusMall Product Research</h1>
+        </header>
+       <div id="imageSection">
+            <div>
+                <h2 id="instruction">Instructions:</h2>
+                <p>Select an item that you would most likey purchase by clicking on one of the three images shown. After selection, a new set of items will appear. Please continue to select items until you have selected 25 total. To view a graph of your selections scroll down.</p>
+            </div>
+            <figure>
+                <img id="product-image-1" src="" alt="" width="250" height="250"/>
+            </figure>
+            <figure>
+                <img id="product-image-2" src="" alt="" width="250" height="250"/>
+            </figure>
+            <figure>
+                <img id="product-image-3" src="" alt="" width="250" height="250"/>
+            </figure>
+            <div id="progresscounter"></div>
+            <section id="reset">
+                    <button type='button' onClick='resetProductsChosen()'>Clear Previous Results</button>
+            </section>    
+        </div>
+        <section id="productsPicked">
+                <canvas id="resultsChart" width="940" height="400" backgroundColor='#faebd7'></canvas>
+        </section>
+        <section>
+            <button id='generateDataButton' type='button' onClick='generateData()'> Generate Data</button>
+            <button id='showHideDataButton' type='button' onClick='showHideData()'> Show/Hide Data</button>
+
+            <ul id="dataInformation">
+            </ul>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="js/app.js"></script>
+    </body>
+</html>
