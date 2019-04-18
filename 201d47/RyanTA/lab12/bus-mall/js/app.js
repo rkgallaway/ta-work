@@ -1,5 +1,16 @@
 'use strict';
+//////////////////////////////////////
 
+// check local st.
+
+//use the data if exists
+
+//render chart using old data
+
+
+
+
+/////////////////////////////////////
 //create global variables
 var names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 var allProducts = [];
@@ -106,9 +117,10 @@ function handleClick(event){
 
   if(totalClicks === 25){
     container.removeEventListener('click', handleClick);
+    //local
     updateChartArrays();
     drawChart();
-    return showList();
+    showList();
   }
 
   productRender();

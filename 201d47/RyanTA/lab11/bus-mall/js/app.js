@@ -70,7 +70,7 @@ function productRender(){
   selectivelyRender();
   allProducts[previouslyShown[3]].views++;
   allProducts[previouslyShown[4]].views++;
-  allProducts[previouslyShown[4]].views++;
+  allProducts[previouslyShown[5]].views++;
   imageOne.src = allProducts[previouslyShown[3]].filepath;
   imageTwo.src = allProducts[previouslyShown[4]].filepath;
   imageThree.src = allProducts[previouslyShown[5]].filepath;

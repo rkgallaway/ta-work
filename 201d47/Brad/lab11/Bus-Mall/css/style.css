@@ -1,0 +1,11 @@
+/* Header*/
+/*main*/
+img {
+  width: 200px;
+  height: 200px;
+  margin: 0px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+/* footer*/
