@@ -165,5 +165,5 @@ catalogImageReferenceTwo.addEventListener('click', getUserData);
 var catalogImageReferenceThree = document.getElementById('catalog-item3');
 catalogImageReferenceThree.addEventListener('click', getUserData);
 
-var imageContainer = document.getElementById('imageContainer'); //currently causes too many clicks to be counted at once
-imageContainer.addEventListener('click', getUserData);
+// var imageContainer = document.getElementById('imageContainer'); //currently causes too many clicks to be counted at once
+// imageContainer.addEventListener('click', getUserData)
