@@ -1,0 +1,2 @@
+I am a Client, looking for a magazine option to be able to take a tally of votes for the merchandise. 
+I would like the images of the merchandies to be organized in a row of three different pictures, that when one is selected as their favorite, three new sets of images of my merchandise are shown. I would like this to continue 25 more times, while the end of the tally showing which image was clicked the most.
