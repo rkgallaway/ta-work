@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(238, 243, 191);
+    width: 960px;
+    display: block;
+    position: absolute;
+    left: 25%;
+}
+
+#image-container{
+    display: inline-block;
+    position: relative;
+    padding: 1px;
+    border: 1px solid red;
+    background-color: rgba(255, 159, 64, .4);
+}
+
+img{
+    border: 3px solid black;
+}
+
+#rand-img1{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+#rand-img2{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+#rand-img3{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+#myChart{
+    max-width: 600px;;
+    max-height:auto;
+
+}
+
+h1{
+    text-align: center;
+}
