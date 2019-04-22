@@ -1,0 +1,23 @@
+* {
+    background-color: cyan;
+}
+
+#random-images img {
+    width: 400px;
+    height: 400px;
+    display: inline-flex;
+    padding: 0px;
+    
+}
+#chart {
+    width: 600px;
+    height: 300px;
+    
+     
+}
+
+ul {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
