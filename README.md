@@ -16,3 +16,12 @@
   * Raven [GitHub Repo](https://github.com/ravewillow6383)
   * Richard [GitHub Repo](https://github.com/Richard0923)
   * Rob [GitHub Repo](https://github.com/RTanner90)
+
+
+### 401n12 
+* 4/22/19 - 6/22/19 Students -group Ron 
+  * Karl Polintan [GitHub Repo:](https://github.com/polink)
+  * Connor Sihon [GitHub Repo:](https://github.com/consihon)
+  * Xochil Squaglia [GitHub Repo:](https://github.com/xochil73)
+  * Lorin Stewart [GitHub Repo:](https://github.com/L-Stewart)
+  * Anthony Triplett [GitHub Repo:](https://github.com/Tonytrip3)
