@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Demo for 4/29</title>
+        <style>
+            h1{
+                font-style: italic;
+                background-color: bisque;
+                background-size: auto;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 35px;
+                padding-left: 200px;
+                padding-right: 200px;
+                }
+            body{
+                background:gray;
+                }
+            h1{
+                color: rgb(204, 49, 49);
+                text-align: center;
+                padding: 30px;
+                }
+            div{
+                background: whitesmoke;
+                height: 300px;
+                width: 600px;
+                border: 50px solid rgb(165, 189, 209);
+                margin: 30px;
+                padding: 20px;
+                }
+            
+        </style>  
+    </head>
+    <body>
+        <h1> Class 1 Lab</h1>
+        <div>
+        <p style = "background:rgb(49, 182, 137); background ;color:black; text-align: center; font-size: 30px; border-style: dotted;">What is your name?</p>
+        <p style = "background:rgb(126, 68, 126); color:black; text-align: center; font-size: 30px; border-style: dotted">Where are you from?</p>
+        <p style = "background:pink; color:black;text-align: center; font-size: 30px; border-style: dotted">Where is your dream place?</p>
+        <p style = "background:rgb(113, 132, 218); color:black;text-align: center; font-size: 30px; border-style: dotted">Who are you going to bring?</p>
+        </div>
+            <script>
+                var userName = prompt('Hello, What is your name?');
+                     console.log ('The user said their name is' + ',' + userName);
+                     alert('Hi there, ' + userName + '!');
+                var cityFrom = prompt ( userName + ',' +' where are you from?'); 
+                    console.log ('The user said they are from' + ',' + cityFrom);   
+
+                var dreamPlace = prompt('Where is your dream place?');
+                    console.log ('The user said their dream place is ' + ',' + dreamPlace);
+
+                var dreamTeam = prompt(userName + ',' + ' who are you going to bring to ' + dreamPlace + '?' );
+                    console.log('The user said their name is ' + userName + ' She is from ' + cityFrom + ' Her dream place is ' + dreamPlace +' She wants to bring her ' + dreamTeam);
+                    alert('Hi there, ' + userName + '!' + ' from '+ cityFrom + ' your dream place is ' + dreamPlace + ' and you would love to bring ' + dreamTeam + ' with you'+ '!' + ' How exciting'+ '!');
+            </script>
+            <footer></footer>
+    </body>
+</html>
+
