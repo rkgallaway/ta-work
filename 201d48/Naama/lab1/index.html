@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <title>Class 1 Lab - 4/29 - Na'ama</title>
+        <style>
+            h1 {color:turquoise; 
+                text-align: center;    
+                padding:30px;
+                border: 20px solid salmon;
+                margin: 30px;
+                font-size:300%;
+                }
+            p {font-weight: bold;}
+            body {font-family: Arial, Helvetica, sans-serif;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Class 1 Lab</h1>
+            <h4 style="color:rgb(241, 142, 233); text-align: center; font-style: italic;">Code 201 | Week 1 | 4/29/19</h4>
+        </header>
+        <main>
+            <!-- prompt (question)
+                 store input in var
+                 alert (output - return user response)
+                 console.log (question and response) --> 
+                  
+            <script>
+                var drinkType = prompt('What would you like to drink?');
+                alert('Great! Our ' + drinkType + ' is the best');
+                console.log('The user would like to get a ' + drinkType);
+
+                var drinkSize = prompt('What size would you like your ' + drinkType + '?');
+                alert('Awesome, ' + drinkSize + ' it is!');
+                console.log('The user would like to get a ' + drinkSize + ' ' + drinkType);
+
+                var drinkSugar = prompt('Would you like any sugar in your ' + drinkSize + ' ' + drinkType + '?');
+                alert('Got it. ' + drinkSugar + ' sugar today');
+                console.log('The user would like to get a ' + drinkSize + ' ' + drinkType + ' with ' + drinkSugar + ' sugar');
+
+                var drinkToGo = prompt('Would you like your ' + drinkSize + ' ' + drinkType + ' ' + drinkSugar + ' sugar for here or to go?');
+                alert('Fantastic! Your ' + drinkSize + ' ' + drinkType + ' with ' + drinkSugar + ' sugar ' + drinkToGo + ' will be ready in a few mintues. Thanks!');
+                console.log('The user would like to get a ' + drinkSize + ' ' + drinkType + ' with ' + drinkSugar + ' sugar ' + drinkToGo);
+            </script> 
+             <p style="background: rgb(224, 253, 207); color: rgb(10, 58, 0);">What would you like to drink?</p>
+             <p style="background: rgb(207, 248, 253); color: rgb(6, 27, 2);">What size would you like your Q1?</p>
+             <p style="background: rgb(232, 207, 253); color: rgb(6, 27, 2);">Would you like any sugar in your Q2 Q1? </p>
+             <p style="background: rgb(253, 207, 211); color: rgb(6, 27, 2);">Would you like your Q2 Q1 Q3 for here or to go?</p>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

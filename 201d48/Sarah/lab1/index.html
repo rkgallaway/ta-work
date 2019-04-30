@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Class 01 Lab</title>
+		<style>
+			h1 {color: black;}
+			h1 {background-image: linear-gradient(red, yellow);}
+			h1 {padding: 20px;}
+
+			p {border-style: dotted;}
+			p {padding: 10px;}
+
+			footer {
+				width: 175px;
+				border: 15px solid green;
+				padding: 50px;
+				margin: 20px;
+			}
+
+			h2 {
+				background-image: linear-gradient(purple, blue);
+				opacity: 0.5;
+				filter: alpha(opacity=50);
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		<main>
+		
+			<h1>Class 1 Lab</h1>
+
+			<h2>Questions:</h2>
+
+		</main>
+		
+		<p style="color: white; background: darkred">What is your name?</p>
+		<p style="color: yellow; background: blue;">What color are your eyes?</p>
+		<p style="color: white; background: darkgreen;">What is your favorite color?</p>
+		<p style="color: blue; background: yellow;">What is your favorite sport?</p>
+
+		<footer>This was created on 4/29.</footer>
+
+		<script>
+			var userName = prompt('Greetings. What is your name?');
+			var userEyes = prompt('What color are your eyes?');
+			var userColor = prompt('What is your favorite color?');
+			var userSport = prompt('What is your favorite sport?');
+			alert('Hi there, ' + userName + ' with ' + userEyes + ' eyes! I also like the color ' + userColor + ' and ' + userSport + '!');
+			console.log('The user said their name is ' + userName);
+			console.log('The user said their eye color is ' + userEyes);
+			console.log('The user said their favorite color is ' + userColor);
+			console.log('The user said their favorite sport is ' + userSport);
+		</script>
+	</body>
+</html>
