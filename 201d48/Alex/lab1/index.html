@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+      <title>Demo for 4/29</title>
+
+      <style>
+        h1 {background: blue; color: white;}
+        footer {border: 2px solid black;}
+        main {border: 2px solid black;}
+      </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>First Day of seattle-201d48</h1>
+    </header>
+    
+    <main>
+
+      <h1>Class 1 Lab</h1>
+      
+      <p style="background: red; color: yellow;">"Greetings. What is your name?"</p>
+      <p style="background: blue; color: orange;">"How old are you?"</p>
+      <p style="background: black; color: white;">"Where do you live?"</p>
+      <p style="background: gold; color: black;">"What is your favorite hobby?"</p>
+
+      <script>
+        var name = prompt("Greetings. What is your name?");
+        console.log('The user said their name is ' + name + '.');
+
+        var age = prompt("How old are you?");
+        console.log('The user said said their age is ' + age + '.');
+
+        var home = prompt("Where do you live?");
+        console.log('The user said they live in ' + home + '.');
+
+        var hobby = prompt("What is your favorite hobby?");
+        console.log('The user said their favorite hobby is ' + hobby + '.');
+        
+        var ageComparison = function(age) {
+          if ((41 - age) > 0) {
+            ageComparison = " (which is " + (41 - age) + " years younger than me.)"
+          } 
+          if ((41 - age) < 0) {
+            ageComparison = " (which is " + ((41 - age) * -1) + " years older than me.)" 
+          } 
+          if ((41 - age) === 0) {
+            ageComparison = " (which is the same age as me.)"
+          }
+          return ageComparison;  
+        }
+
+        alert("Hello " + name + " from " + home + " who enjoys " + hobby + " and is " + age + " years old" + ageComparison(age));
+      
+      </script>
+    </main>
+    
+    <br>
+
+    <footer>
+      <p>Posted by: Alex Reid</p>
+      <p>Contact information: <a href="mailto:alexanderkreid@gmail.com">Email Alex Reid</a>.</p>
+    </footer>
+  </body>
+</html>
