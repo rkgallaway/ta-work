@@ -1,0 +1,12 @@
+h1 { 
+    
+    *background: rgb(53, 94, 94) 
+}
+p {
+    color: rgb(12, 12, 65)
+}
+#first {
+    border: 6px solid rgb(202, 57, 57);
+    padding: 20px;
+    margin: 10px 5px 10px 5px;
+}

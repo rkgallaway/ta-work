@@ -1,7 +1,7 @@
 h1 {
-    color: blue;
+    color: blue; font-size: 40px;
 }
 
 h2 {
-    color:red;
+    background: blueviolet; color:coral; font-size: 25px;
 }

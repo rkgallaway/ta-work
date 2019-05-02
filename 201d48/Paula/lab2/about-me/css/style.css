@@ -1,0 +1,25 @@
+h1{
+    font-style: italic;
+    background-color: rgb(192, 115, 22);
+    background-size: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    padding-left: 200px;
+    padding-right: 200px;
+    }
+body{
+    background:gray;
+    }
+h1{
+    color: rgb(204, 49, 49);
+    text-align: center;
+    padding: 30px;
+    }
+div{
+    background: whitesmoke;
+    height: 300px;
+    width: 600px;
+    border: 50px solid rgb(165, 189, 209);
+    margin: 30px;
+    padding: 20px;
+    }
