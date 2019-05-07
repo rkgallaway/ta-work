@@ -1,0 +1,54 @@
+body{
+    background-color: lightgrey;
+    /* background-image: https://live.staticflickr.com/4781/40094310265_f6b090cfef_b.jpg; */
+    
+    
+
+}
+
+#header{
+    background-color: white;
+    height: 100px;
+    width: 400 px;
+    margin: 40px 150px 0px 150px;
+    font-family: 'Fjalla One', sans-serif;
+        
+    
+}
+
+
+h1{
+    /* color: ; */
+    padding: 25px 250px 25px 250px;
+    text-align: center;
+    font-size: 250%;
+    letter-spacing: .3em;
+
+}
+h3{
+    padding: 20px 20px 20px 20px;
+    text-align: right;
+}
+#content{
+    margin: 50px 150px 0px 150px;
+}
+
+ul{
+    Background-color: white; 
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: .3em;
+    line-height: 2em;
+    padding-inline-start: 3em;
+}
+    
+
+#ManhattanBeach{
+    float: right;
+    color: teal
+
+}
+/* h1 {color: darkgray;}
+            body {background: powderblue; text-align: right;} */
