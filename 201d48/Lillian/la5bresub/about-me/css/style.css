@@ -1,0 +1,58 @@
+h1,p {
+  margin-top: 10px;
+  margin-left: 10px;
+  letter-spacing: .2em;
+}
+
+h1::first-letter {
+  font-size: 30px;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase; 
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: .1em;
+}
+
+#list {
+  padding: 10px;
+  margin: 10px;
+  border: 5px dotted black;
+  display: in-line block;
+  background-color: white;
+}
+
+article {
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  display: in-line block;
+  background-color: white;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color:#262626;
+  max-width: 500px;
+  margin: auto;
+  width: 60%;
+  opacity: .75;
+}
+
+footer {
+  text-align: right;
+}
+
+ol li {
+  margin-left: 10px;
+}
