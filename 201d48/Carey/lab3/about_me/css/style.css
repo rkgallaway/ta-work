@@ -1,0 +1,16 @@
+#first {
+    border: 6px dotted rgb(202, 57, 57);
+    padding: 20px;
+    margin: 10px 5px 10px 5px;}
+
+#second {
+    border: 6px dashed rgb(65, 19, 19);
+    padding: 20px;
+    margin: 10px 5px 10px 5px;
+}
+body {
+    background-color: darkcyan
+}
+p, ol {
+    background-color: rgb(135, 209, 209)
+}

@@ -1,0 +1,75 @@
+h1{
+    font-style: italic;
+    background-color: rgba(83, 71, 71, 0.61);
+    background-size: auto;
+    font-family: Courier, Courier, monospace;
+    font-size: 70px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-shadow: 4px 4px 3px rgba(240, 203, 38, 0.774);
+    text-align: center;
+    border-style: groove;
+    height: 100px;
+    table-layout: auto;
+    }
+body{
+    
+    background: content-box radial-gradient(rgb(125, 177, 226), rgb(192, 195, 196));
+
+    }
+
+.phils{
+    background: whitesmoke;
+    height: 50px;
+    width: 600px;
+    border: 20px solid rgba(171, 210, 228, 0.788);
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    }
+
+.cats{
+    background: whitesmoke;
+    height: 50px;
+    width: 600px;
+    border: 20px solid rgba(171, 210, 228, 0.788);
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    }
+
+.child{
+    background: whitesmoke;
+    height: 50px;
+    width: 600px;
+    border: 20px solid rgba(171, 210, 228, 0.788);
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    }
+
+.color{
+    background: whitesmoke;
+    height: 50px;
+    width: 600px;
+    border: 20px solid rgba(171, 210, 228, 0.788);
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px; 
+    }
+
+.cute{
+    background: whitesmoke;
+    height: 50px;
+    width: 600px;
+    border: 20px solid rgba(171, 210, 228, 0.788);
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    }
+
