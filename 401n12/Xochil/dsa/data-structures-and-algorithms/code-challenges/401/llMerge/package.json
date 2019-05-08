@@ -1,0 +1,11 @@
+{
+  "name": "ll_merge",
+  "version": "1.0.0",
+  "description": "code challenge 8",
+  "main": "ll_merge.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Xochil Squaglia",
+  "license": "ISC"
+}

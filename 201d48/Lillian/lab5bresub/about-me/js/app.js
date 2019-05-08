@@ -14,9 +14,6 @@ function userQuestions(){
       alert ('You got it ' + userName + '! ' + response[y]);
       console.log(userName + ' guessed the correct answer for number ' + y);
       correctAnswers++;
-    } else if (userAnswer !== 'yes' && userAnswer !== 'no'){
-      alert ('Please answer with a yes or no');
-      userQuestions();
     } else {
       alert ('Boo you are wrong ' + userName + '! ' + response[y]);
       console.log(userName + ' guessed the incorrect answer for number ' + y);
