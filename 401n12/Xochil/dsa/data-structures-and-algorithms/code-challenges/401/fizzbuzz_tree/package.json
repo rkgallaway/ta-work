@@ -1,0 +1,11 @@
+{
+  "name": "fizzbuzz_tree",
+  "version": "1.0.0",
+  "description": "binary tree code challenge",
+  "main": "fizz-buzz-tree.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Xochil Squaglia",
+  "license": "ISC"
+}

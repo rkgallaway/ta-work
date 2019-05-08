@@ -1,0 +1,11 @@
+{
+  "name": "queuewithstacks",
+  "version": "1.0.0",
+  "description": "creating a queue using only 2 stacks",
+  "main": "queue-with-stacks.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Xochil Squaglia",
+  "license": "ISC"
+}

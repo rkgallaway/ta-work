@@ -1,0 +1,15 @@
+{
+  "name": "breadth_first",
+  "version": "1.0.0",
+  "description": "search a binary tree breadth first",
+  "main": "breadth_first.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "author": "Xochil Squaglia",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}

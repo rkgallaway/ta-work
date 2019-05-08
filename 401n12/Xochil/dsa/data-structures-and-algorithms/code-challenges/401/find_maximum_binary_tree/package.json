@@ -1,0 +1,11 @@
+{
+  "name": "find_maximum_binary_tree",
+  "version": "1.0.0",
+  "description": "find_maximum_binary_tree",
+  "main": "find_maxiumum_value.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Xochil Squaglia",
+  "license": "ISC"
+}
