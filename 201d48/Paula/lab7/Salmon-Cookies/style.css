@@ -1,0 +1,60 @@
+body{
+    display: block;
+    background: content-box radial-gradient(rgb(137, 165, 190), rgb(192, 195, 196));
+    }
+h1{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    padding-top: 50px;
+}
+.header{
+    padding:60px;
+    text-align:  center;
+    backface-visibility: visible;
+    color: rgb(65, 61, 61);
+    font-size: 30px;
+}
+h2{
+    color: rgb(65, 72, 80);
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+}
+.fish{
+    display: block;
+    width: 50%;
+    height: 200;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+table{
+    padding-left: 50px;
+    border: 2px solid black;
+    border-spacing: 3rem;
+    width: 30px;
+    border-collapse: collapse;
+}
+th{
+    border: 5x solid black;
+    padding: 20px;
+    background-color: blanchedalmond;
+    font-weight: bolder;
+    border-collapse: collapse;
+}
+td {
+    border: 5x solid black;
+    padding: 20px;
+    background-color: blanchedalmond;
+    border-collapse: collapse;
+}
+tr{
+    border: 5x solid black;
+    padding: 20px;
+    background-color: blanchedalmond;
+    font-weight: bolder;
+    border-collapse: collapse;
+}
