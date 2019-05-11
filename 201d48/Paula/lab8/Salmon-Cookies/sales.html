@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sales for Salmon Cookies</title>
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+       
+    </head>
+    <body>
+        <h1>Pats Salmon Cookies Sales</h1>
+
+            
+        <h2> Seattles Best</h2>
+
+        <input type="button" value="Home" onclick="history.back()">
+        
+        <img id = "fish" src = "salmon.png" alt="Salmon"></img>
+            
+            <form id="salesform">
+                <fieldset>
+                    <legend>Sales Submission Form</legend>
+
+                    <label for="storename">Store Name:</label>
+                    <input name = "storename" type="text" size="15" placeholder="location name" required/>
+                    
+                   
+                    <label for="minimumcustomer">Minimum Customer:</label>
+                    <input name = "minimumcustomer" type="text" size="15" placeholder="min customer" required/>
+                    
+
+                    <label for="maximumcustomer">Max Customer Customer:</label>
+                    <input name = "maximumcustomer" type="text" size="15" placeholder="max customer" required/>
+
+
+                    <label for="averagetotal">Average Total Value:</label>
+                    <input name = "averagetotal" type="text" size="15" placeholder="average total" required/>
+
+                    <button type="submit">Submit the Form</button>
+
+
+                    <!-- <button id = "clear">Clear</button> -->
+                    
+                    <ul id = "clear"></ul>
+                    
+                    
+                </fieldset>
+            </form>
+
+            
+               
+              
+        <table id="store-table"></table>
+
+        
+
+
+        <script src="app.js" type="text/javascript"></script>
+
+    </body>
+</html>

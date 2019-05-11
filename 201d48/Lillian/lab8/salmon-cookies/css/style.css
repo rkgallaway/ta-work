@@ -1,0 +1,100 @@
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  letter-spacing: .4em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+div {
+  margin: 30px;
+}
+
+.about-us img {
+  float: right;
+}
+
+div {
+  overflow: hidden;
+}
+
+
+#salmon1 {
+  margin: 5px 0px 20px 50px;
+  float: left;
+}
+
+#salmon2 {
+  margin: 5px 40px 0px 50px;
+  float: right;
+}
+
+.ingredients img {
+  float:left;
+  margin-right:20px;
+
+}
+
+.ingredients p {
+  font-style: italic;
+}
+
+p {
+  line-height: 35px;
+  text-align: left; 
+}
+
+table, th, td {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 1px black;
+  margin: auto;
+}
+
+div {
+  padding: 10px;
+}
+
+
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+hr {
+  margin: 20px;
+  border: #262626 1px solid;
+}
+
+#locations, li {
+  text-align:left;
+  margin: 10px;
+}  
+
+html {
+  background-color: rgba(250, 128, 114, .2);
+}
+
+body {
+  font-family:'Montserrat', sans-serif;
+  background-color: white; 
+  border:#262626 .5px solid;
+  text-align: center; 
+  color:#262626;
+  line-height: 30px;
+  letter-spacing: .05em;
+  margin: auto;
+  width: 90%; 
+  opacity: .90;
+} 
+
