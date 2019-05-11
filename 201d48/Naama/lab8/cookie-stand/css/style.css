@@ -1,0 +1,85 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  margin: 40px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+table {
+  /* source from granneman.com*/
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+th{
+  background-color: rgba(164, 220, 252, 0.721);
+  padding: 10px;
+  font-weight: bold;
+}
+
+td{
+  background-color: rgba(236, 247, 253, 0.721);
+  padding: 10px;
+  text-align: center;
+
+}
+
+tfoot {
+  font-weight: bold;
+  border-top: 1px solid black;
+}
+
+form {
+  margin: 60px;
+  text-align: left;
+}
+
+input { 
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+
+fieldset{
+  background-color: rgba(232, 232, 232, 0.55);
+  padding: 10px;
+}
+
+legend{
+  padding: 10px;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 150%;
+}
+
+ul {
+  padding: 10px;
+  text-align: center;
+}
+
+li {
+  float: left;
+  padding: 10px;
+  font-weight: bolder;
+
+}
+
+.salmon {
+  width: 50px;
+}
+
+.chinook {
+  width: 50px;
+}
+
+.opacity{
+  opacity: 0.2;
+  width: 200px;
+  border-radius: 100px;
+  margin-top: 100px;
+}
