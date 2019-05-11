@@ -1,0 +1,96 @@
+/* ENTIRE PAGE */
+body{
+    font-family: helvetica, sans-serif;
+    width: 960px;
+    margin: 0px auto;
+}
+/* HEADER */
+header{
+    height: 100px;
+    border-bottom: 15px solid rgb(196, 192, 192);
+    margin-bottom: 50px;
+}
+
+nav {
+    width: 960px;
+    margin: 0px auto;
+}
+nav img{
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+nav h4{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 15px;
+}
+nav h6{
+    font-size: 8px;
+}
+
+nav li{
+    float: right; 
+    margin: 1px, 1px, 1px, 0px;
+}
+
+/* MAIN */
+
+main div {
+    margin-bottom: 25px;
+}
+
+main div h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+main div h5 {
+    font-size: 8px;
+    color: rgb(196, 192, 192)
+}
+
+main div div {
+    float: right;
+}
+
+main div div img {
+    float: left;
+}
+#hero {
+    /* display: inline-block; */
+    width: 960px;
+    margin: 30px auto;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 960px;
+    overflow: hidden;
+    text-indent: 2em;
+    line-height: 20px;
+}
+
+section {
+    background-image: url("img/list-bg.png");
+}
+
+section ul {
+    margin: 30px;
+}
+
+section li {
+
+}
+
+main div:last-child img {
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+h6 {
+    display: inline-block;
+}
+/* FOOTER */

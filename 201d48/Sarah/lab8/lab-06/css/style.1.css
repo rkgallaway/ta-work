@@ -1,0 +1,76 @@
+  /* //////////////////index.html css https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png//////////////*/
+  body {
+    cursor: url('../img/salmon2.png'), auto;	
+  }
+
+  .salmonCookieHeader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: white;
+  }
+
+  .myHeaderFish {
+    float: right;
+  }
+  
+  .container {
+    float: center;
+  }
+
+  .mySlides {
+    float: center;
+  }
+
+ .header {
+    padding: 40px 16px;
+    background: #555;
+    color: #f1f1f1;
+    font-family: Helvetica, sans-serif;
+    
+}
+  
+.container {
+  padding: 15px;
+  border: 1px solid black;
+  width: 50%;
+  display: table;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.salmonDays {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: rgb(71, 70, 70);
+}
+
+.aboutUsDiv {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: rgb(71, 70, 70);
+}
+
+.hover2:hover {
+  background: rgb(202, 202, 202);
+}
+
+th, td {
+  padding: 20px;
+}
+
+.footerFishDiv {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: rgb(71, 70, 70);
+  float: center;
+}
+
+.footerFish {
+  float: center;
+}
+
+ 
+
+
+  
+

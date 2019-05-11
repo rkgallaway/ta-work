@@ -1,0 +1,51 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 50px;
+    /* margin-top: 45; */
+    /* margin-bottom: 25; */
+    margin-left: 35;
+    /* padding: 30; */
+   text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    columns:black;
+    font-size: 35px;
+    /* padding:25; */
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+}
+
+label {
+       border-block-end-color: black;
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: rgb(225, 252, 250);
+    text-align: center;
+    /* background-image: url("../img/fish.jpg"); */
+    background-position: center top;
+}
+
+
+table {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(255, 246, 234);
+    border-width: 4px;
+    width: 900px;
+    /* height: 250px; */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 50;
+    margin-left:200px; 
+    
+}
+
+

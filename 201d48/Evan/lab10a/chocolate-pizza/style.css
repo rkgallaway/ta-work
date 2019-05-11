@@ -1,0 +1,147 @@
+/* Entire Page */
+
+body {
+  font-family: Helvetica;
+}
+
+/* Header */
+header {
+  margin-top:30px;
+  width: 960px;
+  margin: 0px auto;
+}
+img[title="Fork and Knife"] {
+   float: left;
+  margin-right: 10px;
+}
+h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Mr Dafoe';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mr Dafoe Regular'), local('MrDafoe-Regular'), url(https://fonts.gstatic.com/s/mrdafoe/v7/lJwE-pIzkS5NXuMMrFitibI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+header p {
+  position: absolute;
+  font-size: 8.5px;
+  margin-left: 30px;
+ 
+}
+header li {
+  float: right;
+  position: relative;
+  bottom: 20px;
+}
+
+img[title="line"] {
+  width: 960px;
+}
+
+/* Main - sub banners */
+
+main {
+  width: 960px;
+  margin: 30px auto;
+}
+
+h1{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3K8-C8QSw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+
+h6 {
+  display: inline-block;
+  font-size: 8.5px;
+}
+h5 {
+  display: inline-block;
+  font-size: 8.5px;
+  float: right;
+}
+img[title="print-icon"] {
+  display: inline-block;
+  float: right;
+  
+}
+img[title="Chocolate Pizza"] {
+  width: 960px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-indent: 2em; 
+  line-height: 20px;
+}
+
+img[title="list background"] {
+  position: relative;
+  width: 960px;
+  height: 240px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline;
+}
+.leftList {
+  z-index: 999;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 80px;
+  line-height: 24px;
+}
+
+.rightList {
+  z-index: 999;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 500px;
+  line-height: 24px;
+}
+
+/* footer */
+
+footer {
+  margin-top:30px;
+  width: 960px;
+  margin: 0px auto;
+}
+
+img[title="happy-woman"] {
+  float: left;
+}
+
+footer p {
+  display: inline;
+  /* text-align-last: right;
+  width:700px; */
+
+}
+
+h3{
+  border: 3px solid red;
+  display: inline;
+  
+}
+
+button {
+  padding: 10px 30px;
+  background-color:orangered;
+  color:#fff;
+  font-size: 15px;
+  border-radius: 3px;
+  transition: 350ms;
+}
+
+button:hover {
+  background-color: #4682b4;
+}
+
+/* footer */
+

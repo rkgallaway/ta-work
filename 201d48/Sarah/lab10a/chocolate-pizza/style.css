@@ -1,0 +1,134 @@
+header {
+  height: 100px;
+  background: white;
+  
+}
+
+#header-logo {
+  float: left;
+  margin-top: 25px;
+
+}
+
+main {
+  width: 960px;
+  margin-bottom: 30px auto;
+  margin: 0px auto;
+}
+
+header span {
+  margin-top: 15px;
+  position: absolute;
+  line-height: 1px;
+
+}
+
+#header-title {
+  font-family: cursive;
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+#header-subtitle {
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  width: 960px;
+  margin: 0px auto; 
+}
+
+header li {
+  float: right;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 5px; 
+}
+
+
+#posted {
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#444;
+  line-height: 5px;
+}
+
+#print {
+  float: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#444;
+  line-height: 5px;
+  font-size: 10px;
+}
+#print-img {
+  float: right;
+  line-height: 5px;
+  
+}
+
+
+.notepad {
+  position: relative;
+
+}
+
+#list-one {
+  position: absolute;
+  top: 58px;
+  left: 150px;
+  
+}
+
+#list-two {
+  position: absolute;
+  top: 58px;
+  right: 150px;
+}
+
+.vanessa {
+  display: inline-block;
+}
+button {
+  padding: 12px 25px;
+  background: chocolate;
+  font-size: 20px;
+  transition: 350ms;
+  float: right;
+}
+button:hover {
+  background: rgb(253, 244, 159);
+}
+
+#vaness-img {
+  float: left;
+  margin-top: 25px;
+
+}
+
+
+#vanessa-span {
+  margin-top: 15px;
+  position: absolute;
+  line-height: 1px;
+
+}
+
+#vanessa-name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+#vanessa-blurb {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+footer {
+  text-align: center;
+}
