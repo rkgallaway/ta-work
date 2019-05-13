@@ -1,0 +1,56 @@
+
+th, td {
+  padding: 10px;
+  border: 1px solid #262626;
+}
+
+table {
+  border: 2px solid #262626;
+  font-size: 15px;
+}
+
+form {
+  padding: 10px;
+  font-size: 10px;
+}
+
+button {
+  font-size: 10px;
+}
+
+tr td:first-child, th {
+  background-color: rgba(250, 128, 114, .2);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(250,128,114,.2); 
+} 
+
+th {
+  text-transform: uppercase;
+}
+
+
+tr td:first-child, th, tr td:last-child, tr:last-child{
+  font-weight: bold; 
+}
+
+h1 {
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 900px;
+  margin: auto;
+}
+
+
+

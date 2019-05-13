@@ -1,0 +1,84 @@
+/* Page */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  width:960px;
+  margin: auto;
+}
+
+/* Header */
+h1 {
+  color: salmon;
+  margin: auto;
+  display: inline;
+}
+/* Main */
+header {
+  margin-bottom: 100px;
+}
+
+
+img[title="salmon"] {
+  float:left;
+  width: 20%;
+  height: 70px;
+}
+
+img[title="chinook"] {
+  display: inline-block;
+  float:right;
+  width: 20%;
+  height: 70px;
+}
+hr {
+  margin-top: 50px;
+}
+img[title="fish"] {
+  float:right;
+  width: 300px;
+  }
+img[title="frosted-cookie"] {
+  float:right;
+  width: 300px;
+}
+img[title="cutter"] {
+  position: absolute;
+  margin-left:660px;
+  margin-top:60px;
+  float:right;
+  width: 300px;
+}
+img[title="shirt"] {
+  float:left;
+  width: 300px;
+}
+img[title="family"] {
+  margin-top: 300px;
+  float:right;
+  width: 300px;
+}
+#locations{
+  margin-top: 80px;
+}
+#hours {
+  margin-top: 160px;
+}
+#copyright {
+  text-align: center;
+}
+#merch {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 360px;
+}
+#salmon-events{
+  position: absolute;
+  margin-top: 360px;
+  margin-left: 380px;
+}
+div {
+  margin-top: 80px; 
+  width: 960px;
+  height: 480px;
+}
+
+/* Footer */
