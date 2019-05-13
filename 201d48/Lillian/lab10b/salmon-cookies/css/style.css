@@ -1,0 +1,142 @@
+/* Body */
+
+body {
+  font-family:'Montserrat', sans-serif;
+  background-color: white; 
+  text-align: center; 
+  color:#262626;
+  line-height: 30px;
+  letter-spacing: 2px;
+  opacity: .90;
+} 
+
+
+
+/* Header */
+
+hr {
+
+  border: #262626 2px solid;
+}
+
+header {
+  background-color: salmon;
+  width: 100%;
+}
+
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 30px;
+  font-size: 45px;
+  letter-spacing: 10px;
+}
+
+
+/* Main */
+
+#salmon1 {
+  margin: 0px 0px 0px 170px;
+  float: left;
+}
+
+#salmon2 {
+  margin: 0px 170px 0px 0px;
+  float: right;
+}
+
+main {
+  margin: auto;
+  width: 63%; 
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 20px;
+  margin:30px 0px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.about-us img {
+  float: right;
+}
+
+.about-us p {
+  text-indent: 60px;
+}
+
+div {
+  overflow: hidden;
+}
+
+.ingredients img {
+  float:left;
+  margin-right: 30px;
+
+}
+
+
+.ingredients p {
+  margin-top: 30px;
+  font-style: italic;
+  overflow: auto;
+  height: 150px;
+}
+
+#break {
+  display: block;
+  margin-top: 30px;
+  margin-left: 90px;
+}
+
+.merch div {
+  margin: 0px 55px 20px 55px;
+  float: left;
+  border: .4px #262626 solid;
+}
+
+.merch img {
+  margin:10px;
+}
+
+p {
+  line-height: 35px;
+  text-align: left; 
+}
+
+h3 {
+  font-size: 10px;
+}
+
+h4 {
+  font-size: 13px;
+}
+
+/* Footer */
+
+table, th, td {
+  padding: 15px;
+  border: solid 1px #262626;
+}
+
+footer {
+  margin: 20px;
+  margin: auto;
+  width: 63%; 
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+#locations, li {
+  margin: 10px;
+}  

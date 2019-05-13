@@ -1,0 +1,137 @@
+html {
+    background-color: whitesmoke;
+}
+
+
+header{
+    width: 960px;
+    height: 250px;
+    /* margin: 0px auto; */
+    margin-top: 30px;
+    background-color: antiquewhite;
+
+    /* background-color: #fbd9bb; */
+    /* outline: solid 3px red; */
+}
+div p{
+    text-align: right;
+}
+header img{
+    /* width: 800px;  */
+    margin-left: 280px;
+    position: absolute;
+    /* z-index: 100; */
+    opacity: .3;
+    /* position: relative; */
+    /* opacity: -; */
+    display:inline-block;
+}
+h1 {
+    /* display: inline; */
+    font-family: 'Federo', sans-serif;
+    font-size: 30pt;
+    padding: 100px 10px 0px 350px;
+}
+h4{
+    font-size: 12pt;
+    padding-left: 520px; 
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+body{
+    width: 960px;
+    margin: 0px auto;
+}
+body img{
+    float: left;
+    width: 430px;
+    /* margin-top: 30px; */
+    margin-right: 30px;
+    display: inline-block;
+    padding-top: 30px;
+}
+#story{
+    padding: 60px 0px 0px 0px; 
+    height: 220px;
+    /* outline: 3px solid red; */
+    align-self: auto;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 40px;
+}
+#chinook{
+    float: right;
+    width: 430px;
+    /* margin-top: 30px; */
+    margin-right: 30px;
+    display: inline-block;
+    padding-top: 30px;
+}
+#community{
+    padding: 30px 0px 0px 0px; 
+    height: 220px;
+    /* outline: 3px solid red; */
+    align-self: auto;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 40px;
+}
+#cutter{
+    width:200px;
+    display: inline-block;
+
+}
+#gross{
+    padding: 60px 0px 0px 0px; 
+    height: 220px;
+    /* outline: 3px solid red; */
+    align-self: auto;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 40px;
+}
+#cookie{
+    width: 220px;
+    float: right;
+    padding: 60px 0px 0px 30px; 
+}
+/* div{
+    /* height: 300px;
+    background-color: antiquewhite; */
+    /* opacity: -2; */
+/* } */
+footer{
+    width: 960px;
+    height: 200px;
+    margin: 0px auto;
+    background-color: antiquewhite;
+}
+footer img{
+    display: inline-block;
+}
+#school{
+    padding-left: 30px;    
+    width: 150px;
+}  
+#schwag{
+    width: 150px;
+    height: 150px;
+}
+caption{
+    text-align: left;
+}
+
+footer li{
+    
+    text-align: justify;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 18px;
+
+}
+    

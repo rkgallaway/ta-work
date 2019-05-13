@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <title>Lab 6</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <h1>Salmon Cookies Sales</h1>
+    
+    <form id="cookie-form">
+      <fieldset>
+        <legend>Add a New Cookie Store</legend>
+  
+        <img src="cookie.png" alt="Happy Cookie">
+
+        <label for="storeName">Store Name</label>
+        <input name="storeName" type="text" size="20" placeholder="Store Name" required />
+  
+        <label for="minCustomers">Minimum Hourly Customer</label>
+        <input name="minCustomers" type="number" size="20" placeholder="Minimum Hourly Customer" required />
+
+        <label for="maxCustomers">Maximum Hourly Customers</label>
+        <input name="maxCustomers" type="number" size="20" placeholder="Maximum Hourly Customer" required />
+
+        <label for="avgSales">Average Sales Per Customer</label>
+        <input name="avgSales" type="text" size="20" placeholder="Average Sales Per Customer" required />
+  
+        <button type="submit">Add a New Store</button>
+      </fieldset>
+    </form>
+    <table id="cookieStores"></table>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
