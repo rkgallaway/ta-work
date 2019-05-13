@@ -1,0 +1,27 @@
+@import "../styles/_vars.scss";
+.app {
+  background-color: $primary-color;
+
+}
+
+.link {
+  color: gray;
+  background-color: #007C89 ;
+
+}
+
+.header {
+  text-align: center;
+  font-family: Cooper Lt BT;
+  font-style: italic;
+  font-size: 30px;
+
+}
+
+.list {
+  width: 200px;
+  border: 10px solid magenta;
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+}
