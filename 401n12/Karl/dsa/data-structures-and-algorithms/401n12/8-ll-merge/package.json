@@ -1,0 +1,25 @@
+{
+  "name": "7-linkedlist-kth-from-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polink/data-structures-and-algorithms.git"
+  },
+  "author": "Karl Polintan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polink/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/polink/data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
