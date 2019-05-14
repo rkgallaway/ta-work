@@ -1,0 +1,18 @@
+
+body {
+    width: 960px;
+    margin: 0px auto;
+}
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin-right: 30px;
+}
