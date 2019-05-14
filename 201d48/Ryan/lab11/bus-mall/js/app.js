@@ -98,11 +98,13 @@ function handleClick(event){
 
   productRender();
 }
+
+
 function showList(){
   // alert ('pretend list is showinwg');
   for (var i = 0; i < allProducts.length; i++){
     var liEl = document.createElement('li');
-    liEl.textContent = `${allProducts[i].name} has ${allProducts[i].views} and views and ${allProducts[i].votes} votes`;
+    liEl.textContent = `${allProducts[i].name} has ${allProducts[i].views} views and ${allProducts[i].votes} votes`;
     productList.appendChild(liEl);
   }
 }
