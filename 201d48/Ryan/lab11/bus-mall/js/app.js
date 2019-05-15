@@ -80,7 +80,7 @@ function productRender(){
 function handleClick(event){
   // console.log (event.target.alt, 'was clicked');
   if (event.target.id === 'image-container'){
-    return alert('Please click on an image!');
+    alert('Please click on an image!');
   }
   totalClicks++;
 
