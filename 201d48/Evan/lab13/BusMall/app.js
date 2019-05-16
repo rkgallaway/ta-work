@@ -4,8 +4,8 @@
 var product1 = document.getElementById('product1');
 var product2 = document.getElementById('product2');
 var product3 = document.getElementById('product3');
-var products = document.getElementById('products-container');
-// document.getElementById('productsPicked').innerHTML = '0 of 25 products picked';
+var products = document.getElementById('products');
+document.getElementById('productsPicked').innerHTML = '0 of 25 products picked';
 
 var productArray = [];
 var productImageArray = [product1, product2, product3];
@@ -75,7 +75,7 @@ function handleProductClick(event){
   }
   // Tracking total products picked
   totalProductsPicked++;
-  // updateChartArrays();
+  updateChartArrays();
 
   if (totalProductsPicked > 24) {
     document.getElementById('productsPicked').innerHTML = '25 of 25 products picked';
@@ -92,6 +92,8 @@ function handleProductClick(event){
 
 
 
+//Event Listener
+products.addEventListener('click', handleProductClick);
 
 // Show first 3 images
 showImages();
@@ -107,7 +109,7 @@ function drawChart () {
   var gradient = ctx.createLinearGradient(0, 0, 0, 400);
   gradient.addColorStop(0, 'rgba(250,174,50,1)');
   gradient.addColorStop(1, 'rgba(250,174,50,0)');
-  new Chart(ctx, {
+  var pickedProductsChart = new Chart(ctx, {
 
     // The type of chart we want to create
     type: 'bar',
@@ -166,5 +168,3 @@ function updateChartArrays() {
 // }
 
 // }
-//Event Listener
-products.addEventListener('click', handleProductClick);

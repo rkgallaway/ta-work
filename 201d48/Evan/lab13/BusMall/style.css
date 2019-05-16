@@ -16,11 +16,7 @@ body {
   margin: auto;
 }
 
-img{
-  width: 200px;
-  height: 200px;
-}
-/* #product1 {
+#product1 {
   float: left;
   position: absolute;
   margin-top: 150px;
@@ -28,8 +24,8 @@ img{
   border: 2px solid red;
   display: block;
 }
- */
-/* #product2 {
+
+#product2 {
  position: absolute;
  margin-top: 150px;
  width: 300px;
@@ -41,8 +37,8 @@ img{
  margin-top: 150px;
  width: 300px;
  margin-left: 640px;
-} */
-/* 
+}
+
 #productsPicked {
   font-weight: bold;
   margin-top: 20px;
@@ -56,11 +52,11 @@ ul {
 
 #productChart {
   margin-top: 160px;
-} */
+}
 
-/* .products {
+.products {
   border: 2px solid red;
   height: 100px;
   width: 500px;
-} */
+}
 
