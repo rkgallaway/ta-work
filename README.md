@@ -25,3 +25,17 @@
   * Xochil Squaglia [GitHub Repo:](https://github.com/xochil73)
   * Lorin Stewart [GitHub Repo:](https://github.com/L-Stewart)
   * Anthony Triplett [GitHub Repo:](https://github.com/Tonytrip3)
+
+
+### 201d48
+* 4/29/19 - 5/24/19
+  * Na'ama Bar-Ilan [GitHub Repo:](https://github.com/NaamaBarIlan)
+  * Evan Brecht-Curry [GitHub Repo:](https://github.com/EvanBC)
+  * Paula Cruz [GitHub Repo:](https://github.com/polangs)
+  * Lillian Gales [GitHub Repo:](https://github.com/lillielise)
+  * Sarah Gilliam [GitHub Repo:](https://github.com/sarahduv)
+  * Carey Goodwin [GitHub Repo:](https://github.com/CareyEG)
+  * Sara Haynes [GitHub Repo:](https://github.com/SaraJHaynes)
+  * Matthew Heyert [GitHub Repo:](https://github.com/heyerthb)
+  * Alex Reid [GitHub Repo:](https://github.com/surfwalker)
+
