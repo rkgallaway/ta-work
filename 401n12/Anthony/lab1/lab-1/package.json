@@ -1,0 +1,27 @@
+{
+  "name": "lab-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tonytrip3/lab-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tonytrip3/lab-1/issues"
+  },
+  "homepage": "https://github.com/Tonytrip3/lab-1#readme",
+  "dependencies": {
+    "arithmetic": "^1.0.1",
+    "faker": "^4.1.0",
+    "jest": "^24.8.0"
+  }
+}
