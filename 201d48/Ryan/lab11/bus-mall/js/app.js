@@ -73,6 +73,9 @@ function productRender(){
   imageOne.title = allProducts[previouslyShown[3]].name;
   imageTwo.title = allProducts[previouslyShown[4]].name;
   imageThree.title = allProducts[previouslyShown[5]].name;
+  imageOne.tabIndex = '0';
+  imageTwo.tabIndex = '0';
+  imageThree.tabIndex = '0';
 }
 
 
