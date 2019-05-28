@@ -31,7 +31,7 @@ module.exports.Tree= class{
         }
     }
     
-    breadthFirst(){
+    breadthFirst(test=false){
         let returns=[];
         let q = [this.root];
         if (!this.root) {
