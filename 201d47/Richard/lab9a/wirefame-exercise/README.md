@@ -1,1 +1,0 @@
-# wirefame-exercise
