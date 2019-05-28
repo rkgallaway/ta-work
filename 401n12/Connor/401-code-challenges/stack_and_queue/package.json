@@ -1,0 +1,17 @@
+{
+  "name": "stack_and_queue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.4.0"
+  },
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
