@@ -1,0 +1,12 @@
+{
+  "name": "cc11-queueWithStacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "queue-with-stacks.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
