@@ -1,0 +1,17 @@
+{
+  "name": "repeatedWord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "repeated-word.js",
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -111,6 +111,10 @@ class LinkedList {
       current = current.next;
     }
   }
+
+  kthFromEnd(k){
+    
+  }
 }
 
 module.exports = LinkedList;

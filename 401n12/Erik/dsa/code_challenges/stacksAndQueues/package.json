@@ -1,0 +1,15 @@
+{
+  "name": "stacksandqueues",
+  "version": "1.0.0",
+  "description": "working on stacks and queue",
+  "main": "stacks-and-queues.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "author": "Erik M Johnson",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.3.1"
+  }
+}
