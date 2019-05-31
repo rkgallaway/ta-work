@@ -58,7 +58,12 @@ describe('Linked List tests', () => {
     list.insert(3);
     expect(list.print()).toEqual(correctResponse);
   });
-  it('Can successfully add a node to the end of the linked list', ()=> {
+});
+
+/////////////////////////////Code Challenge 6 /////////////////////////////
+
+describe('Linked List tests continued - 401 js Code Challenge 6', () => {
+  it('Can successfully add a node to the end of the linked list', ()  => {
     let list = new LinkedList();
     list.append(1);
     list.append(2);

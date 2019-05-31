@@ -1,0 +1,16 @@
+{
+  "name": "hashtable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hashtable.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
