@@ -144,23 +144,68 @@ class LinkedList{
     kthFromEnd(k) {
         let current = this.head;
         let counter = 0;
-        // let pointer = current - k;
+
+        // add check that determines if k is 0 or less, or if it's bigger than the linked list
+        // otherwise currently, bigger/smaller #s return 4
         if (!this.head) {
             throw new Error('__ERROR__ List is empty!')
         }
         while (current.next) {
+            let pointer = this.head;
             current = current.next;
             counter++;
             if (current.next === null) {
                 if (counter === k){
-
+                    // pointer = this.head;
+                    while (pointer.next) {
+                        pointer = pointer.next;
+                    }
                 }
                 // if statement of counter !===k, counter++
                 // start pointer when counter === k, when it is k behind current
+                console.log(pointer.value);
                 return pointer.value;
             }
         }
         return null; // is this necessary?
+    }
+
+    // Alistair's study session code
+    kthEndAB (k) {
+        let counter = 1;
+        let current = this.head;
+
+        while (current.next) {
+            current = current.next;
+            counter++;
+        }
+
+        let runK = counter-k; // Ryan - recommend calling runK target instead
+        if (runK === 0) {
+            return this.head.value;
+        } else if (runK < 0) {
+            return 'K too big!';
+        } else {
+            counter = 0;
+            current = this.head;
+            while (counter < runK) {
+                current = current.next;
+                counter++;
+            }
+            return current.value;
+        }
+    }
+
+    kthFromEndArray (k) {
+        let kArray = [];
+        let current = this.head;
+
+        while (current) { // Ryan - using current is better than current.next, because otherwise the final node will be ignored
+            kArray.push(current.value); // O(n) here on push, O(n)Space for how many elements in the array
+            // Kris - make sure to define N in an interview setting
+            current = current.next;
+        }
+        return kArray[kArray.length-k];
     }
 
     printEntireList() {
@@ -177,6 +222,7 @@ class LinkedList{
         // if we're here, we didn't find anything
         return null;
     }
+
 }
 
 module.exports = LinkedList;
