@@ -18,4 +18,3 @@ linkedList.insertAfter(10, 6);
 // linkedList.printEntireList();
 
 console.log(JSON.stringify(linkedList));
-// logging this will only show two latest nodes?
