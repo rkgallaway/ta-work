@@ -140,3 +140,42 @@ describe('Linked List tests continued - 401 js Code Challenge 6', () => {
     expect(list.print()).toEqual([1, 2, 3]);
   });
 });
+
+/////////////////////////////Code Challenge 7 /////////////////////////////
+
+describe('Linked List tests continued - 401 js Code Challenge 7', () => {
+  it('  Where k is greater than the length of the linked list', () => {
+    let list = new LinkedList();
+    list.append(1);
+    list.append(2);
+    expect(list.kthFromEnd(3)).toEqual('k is greater than length of linked list');
+  });
+  it('Where k and the length of the list are the same', () => {
+    let list = new LinkedList();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    expect(list.kthFromEnd(0)).toEqual(3);
+  });
+
+  it('Where k is not a positive integer', () => {
+    let list = new LinkedList();
+    list.append(1);
+    list.append(2);
+    expect(list.kthFromEnd(-1)).toEqual('k must be greater than 0');
+  });
+  it('Where the linked list is of a size 1', () => {
+    let list = new LinkedList();
+    list.append(1);
+    expect(list.kthFromEnd(0)).toEqual(1);
+  });
+  it('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+    let list = new LinkedList();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.append(4);
+    list.append(5);
+    expect(list.kthFromEnd(2)).toEqual(3);
+  });
+});

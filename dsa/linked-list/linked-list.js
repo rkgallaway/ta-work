@@ -113,7 +113,26 @@ class LinkedList {
   }
 
   kthFromEnd(k){
-    
+    let counter = 0;
+    let current = this.head;
+    if(k < 0){
+      return 'k must be greater than 0';
+    }
+    while(current.next){
+      current = current.next;
+      counter++;
+    }
+    if (k > counter){
+      return 'k is greater than length of linked list';
+    }
+    let kFinder = counter - k;
+    counter = 0;
+    current = this.head;
+    while(counter < kFinder){
+      current = current.next;
+      counter++;
+    }
+    return current.value;
   }
 }
 
