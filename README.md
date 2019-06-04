@@ -14,5 +14,17 @@
   * Anthony Triplett [GitHub Repo:](https://github.com/Tonytrip3)
 
 ### 301d48
-*  coming soon
+*  6/3/19 - 6/28/19
+  * Joanna Arroyo [GitHub Repo:](https://github.com/joannaarroyo)
+  * Na'ama Bar-Ilan [GitHub Repo:](https://github.com/NaamaBarIlan)
+  * Trae Bennett [GitHub Repo:]()
+  * Evan Brecht-Curry [GitHub Repo:]()
+  * Paula Cruz [GitHub Repo:]()
+  * Lillian Gales [GitHub Repo:]()
+  * Carey Goodwin [GitHub Repo:]()
+  * Sara Haynes [GitHub Repo:]()
+  * Matthew Heyert [GitHub Repo:]()
+  * Josh Nebe [GitHub Repo:]()
+  * Alex Reid [GitHub Repo:]()
+  * Raven Robertson [GitHub Repo:]()
 
