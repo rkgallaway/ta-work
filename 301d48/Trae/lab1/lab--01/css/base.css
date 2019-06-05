@@ -1,0 +1,19 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 480;
+}
+
+[class *= 'col-'] {
+    width: 90%;
+    margin: 0 auto;
+    float: left;
+    border: 1px solid black;
+    height: 75px;
+    text-align: center;
+    font-size: 30px;
+}

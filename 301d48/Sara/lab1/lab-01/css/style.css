@@ -1,0 +1,158 @@
+* {
+    font-family: monospace;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    color: black;
+    margin: 0 auto;
+}
+#a {
+    height: 75px;
+    width: auto;
+    line-height: 75px;
+    background-color:#115943;
+}
+#b {
+    width: auto;
+    height: 150px;
+    line-height: 150px;
+    background-color: #60160E;
+}
+#c {
+    width: auto;
+    height: 125px;
+    line-height: 125px;
+    background-color:#985909;
+}
+#d {
+    width: auto;
+    height: 125px;
+    line-height: 125px;
+    background-color: #345421;
+}
+
+#e {
+    height: 240px;
+    width: 250px;
+    line-height: 240px;
+    background-color: #8D2911;
+    float: left;
+}
+#f {
+    height: 240px;
+    width: 250px;
+    line-height: 240px;
+    background-color: #D05F10;
+    float: right;
+
+}
+#g {
+    height: 240px;
+    width: 250px;
+    line-height: 240px;
+    background-color: #D08812;
+    float: left;
+}
+#h {
+    height: 240px;
+    width: 250px;
+    line-height: 240px;
+    background-color: #735911;
+    float: right;
+}
+
+footer {
+    clear: both;
+    height: 80px;
+    width: 500px;
+    line-height: 80px;
+    background-color: #1C120E;
+    color: whitesmoke;
+    margin: 0 auto;
+    bottom: 0;
+
+}
+
+@media (min-width: 960px) {
+    * {
+        font-family: monospace;
+        text-align: center;
+    }
+    
+    .container {
+        width: 960px;
+        color: black;
+        margin: 0 auto;
+    } 
+    #a {
+        height: 100px;
+        width: auto;
+        line-height: 100px;
+        background-color:#D05F10;
+    }
+
+    #b{
+        width: 200px;
+        height: 600px;
+        line-height: 600px;
+        background-color: #115943;
+        float: left;
+    }
+    #c {
+        width: 380px;
+        height: 200px;
+        line-height: 200px;
+        float: left;
+        background-color: #8D2911
+    }
+    #d {
+        width: 380px;
+        height: 200px;
+        line-height: 200px;
+        float: left;
+        background-color: #735911;
+    }
+
+    #e {
+        height: 250px;
+        width: 190px;
+        line-height: 190px;
+        background-color: #345421;
+        float: left;
+    }
+    #f {
+        height: 250px;
+        width: 190px;
+        line-height: 190px;
+        background-color: #985909;
+        float: left;
+    
+    }
+    #g {
+        height: 250px;
+        width: 190px;
+        line-height: 190px;
+        background-color: rgb(102, 48, 25);
+        float: left;
+    }
+    #h {
+        height: 250px;
+        width: 190px;
+        line-height: 190px;
+        background-color: #D08812;
+        float: left;
+    }
+    
+    footer {
+        clear: none;
+        height: 150px;
+        width: 760px;
+        line-height: 150px;
+        background-color: #60160E;
+        float: left;
+        color: black;
+        margin: 0 auto;
+    }
+}

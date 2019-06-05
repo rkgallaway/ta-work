@@ -1,0 +1,173 @@
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+
+header, aside,article div {
+  text-align: center;
+  
+}
+
+
+
+#wrapper {
+  width: 480px;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+
+/* a */
+header {
+  height: 75px;
+  line-height: 75px;
+  margin-top: 10%;
+  background-color: #BF2C47;
+}
+
+/* b */
+aside {
+  height: 100px;
+  line-height: 100px;
+  background-color: #D5E5F2;
+}
+
+/* c and d */
+#first-section div {
+  height: 125px;
+  line-height: 125px;
+}
+
+/* c */
+#first-section div:first-of-type {
+  background-color: #F22E62;
+}
+
+/* d */
+#first-section div:last-of-type {
+  background-color: #04D8D8;
+}
+
+/* e,f,g,h,i */
+#second-section div {
+  float: left;
+  width: 240px;
+  height: 250px;
+  line-height: 250px;
+} 
+
+/* e */
+#second-section div:first-of-type {
+  background-color: #1A80BF;
+}
+
+/* f */
+#second-section div:nth-last-of-type(4) {
+  background-color: #03BF9C;
+}
+
+/* g */
+#second-section div:nth-last-of-type(3) {
+  background-color: #1EA3D8;
+}
+/* h */
+#second-section div:nth-last-of-type(2) {
+  background-color: #028C73;
+}
+
+/* i */
+
+#second-section div:last-of-type {
+  clear: left;
+  height: 80px;
+  width: 480px;
+  line-height: 80px;
+  background-color: #77BDD8;
+  margin-bottom: 10%;
+}
+
+/* footer div {
+  clear: left;
+  height: 80px;
+  line-height: 80px;
+  background-color: #77BDD8;
+  margin-bottom: 10%;
+} */
+
+
+@media(min-width: 768px){
+
+  #wrapper {
+    width: 960px;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  /* a */
+  header {
+    height: 75px;
+    line-height: 75px;
+    margin-top: 10%;
+    background-color: beige;
+  }
+  /* b */
+  aside {
+    height: 600px;
+    width: 200px;
+    float: left;
+    line-height: 600px;
+    background-color: bisque;
+  }
+  /* c and d */
+  #first-section div {
+    height: 200px;
+    float: left;
+    width: 380px; 
+    line-height: 200px;
+  }
+
+  /* c */
+  #first-section div:first-of-type {
+    background-color:blue;
+  }
+
+  /* d */
+  #first-section div:last-of-type {
+    background-color: blueviolet;
+  }
+  /* e,f,g,h,i */
+    #second-section div {
+      width: 190px;
+      height: 250px;
+      line-height: 250px;
+    } 
+  /* e */
+  #second-section div:first-of-type {
+    background-color: brown;
+  }
+
+  /* f */
+  #second-section div:nth-last-of-type(4) {
+    background-color: burlywood;
+  }
+
+  /* g */
+  #second-section div:nth-last-of-type(3) {
+    background-color: cadetblue;
+  }
+  /* h */
+  #second-section div:nth-last-of-type(2) {
+    background-color: chartreuse;
+  }
+  /* i */
+  #second-section div:last-of-type {
+    clear: none;
+    height: 150px;
+    width: 760px;
+    line-height: 80px;
+    background-color: chocolate;
+  
+  }
+}
