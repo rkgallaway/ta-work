@@ -1,0 +1,11 @@
+*{
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    text-align: center;
+  }
+  
+  body{
+    width: 960px;
+    height: 700px;
+}

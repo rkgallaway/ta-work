@@ -1,0 +1,91 @@
+/* 
+layout.css should contain general positioning on the page
+1. Apply to elements such as header, footer, nav, aside
+2. Classes and IDs can be included here*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Default media - Mobile */
+
+#container {
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+#header {
+    height: 75px;
+    line-height: 75px;
+} 
+
+#b {
+    height: 150px;
+    line-height: 150px;
+}
+
+.two {
+    height: 125px;
+    line-height: 125px;
+}
+
+.four {
+    height: 250px;
+    width: 240px;
+    line-height: 250px;
+    float: left;
+}
+
+#footer {
+    clear: both;
+    height: 80px;
+    line-height: 80px;
+}
+
+  
+/* Media for larger devices - Desktop*/
+
+@media (min-width: 768px){
+    #container {
+        width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+      
+    #header {
+        height: 100px;
+        line-height: 100px;
+    } 
+    
+    #b {
+        width: 200px;
+        height: 600px;
+        line-height: 600px;
+        float: left;
+    }
+    
+    .two {
+        width: 380px;
+        height: 200px;
+        line-height: 200px;
+        float: left;
+        
+    }
+    
+    .four {
+        width: 190px;
+        height: 250px;
+        line-height: 250px;
+        float: left;
+    }
+    
+    #footer {
+        clear: none;
+        float:left;
+        width: 760px;
+        height: 150px;
+        line-height: 150px;
+    }
+}
+  

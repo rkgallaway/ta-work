@@ -1,0 +1,93 @@
+/* 
+modules.css should contain smaller components on the page
+1. Apply to elements such as list items, individual images, specific paragraphs
+2. Classes and descendant selectors should primarily be included here */
+
+
+/* Default media - Mobile */
+
+/* Cell Colors */
+
+#header {
+    background-color: #01212D;
+    color: #EFF6E0;
+}
+
+#b {
+    background-color: #1F5673;
+}
+
+#c {
+    background-color: #598392;
+}
+
+#d {
+    background-color: #626868;
+}
+
+#e {
+    background-color: #EFF6E0;
+}
+
+#f {
+    background-color: #2C3951;
+    color: #EFF6E0;
+}
+
+#g {
+    background-color: #A5C7D7;
+}
+
+#h {
+    background-color: #A2A8AE;
+}
+
+#footer {
+    background-color: #18372F;
+    color: #EFF6E0;
+}
+
+/* Media for larger devices - Desktop*/
+
+@media (min-width: 768px){
+    #header {
+        background-color: #766C8C;
+        color: #EFF6E0;
+    }
+    
+    #b {
+        background-color: #D1D0D9;
+    }
+    
+    #c {
+        background-color: #D9AE79;
+    }
+    
+    #d {
+        background-color: #D9B596;
+    }
+    
+    #e {
+        background-color: #BF8D7A;
+    }
+    
+    #f {
+        background-color: #735840;
+        color: #EFF6E0;
+    }
+    
+    #g {
+        background-color: #D9AB82;
+    }
+    
+    #h {
+        background-color: #F2C7AE;
+    }
+    
+    #footer {
+        background-color: #402116;
+        color: #EFF6E0;
+    }
+
+}
+  
