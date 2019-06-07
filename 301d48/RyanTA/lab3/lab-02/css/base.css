@@ -1,0 +1,27 @@
+body {
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: lightgrey;
+    font-family: 'Marcellus', serif;
+}
+
+main {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ main div {
+    height: 600px;
+    width: 310px;
+    align-content: center;
+}
+
+img {
+    width: 300px;
+    border: 1px black solid;
+
+}
+
