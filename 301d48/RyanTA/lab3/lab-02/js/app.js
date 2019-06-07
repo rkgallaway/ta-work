@@ -12,10 +12,15 @@ function Images(pic) {
 Images.allPic = [];
 
 Images.prototype.render = function() {
-  const source = $('#image-div-template').html();
-  const template = Handlebars.compile(source);
+  const source = $('#image-div-template').html();  // template = 
+  const template = Handlebars.compile(source);    // render
   return template(this);
 }
+
+// const context = {
+//   name: 'snickers'
+// }
+
 
 Images.readJson = (pageNumber) => {
   Images.allPic = [];
