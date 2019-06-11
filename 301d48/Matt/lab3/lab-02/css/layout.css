@@ -1,0 +1,24 @@
+* {
+  font-family: 'Indie Flower', cursive;
+}
+
+main {
+  display:grid;
+  grid-template: 1fr / 1fr 1fr 1fr
+ 
+}
+
+img {
+  height: 250px;
+  border: 1px solid black;
+  max-width: 300px;
+  
+}
+
+li {
+  list-style: none;
+}
+
+.photo-template {
+  display: none;
+}
