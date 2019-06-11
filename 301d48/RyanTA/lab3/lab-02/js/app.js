@@ -71,8 +71,8 @@ $(() => Images.readJson(1));
 $('li').on('click', function() {
   let $whereToGo = $(this).attr('id');
   $('main div').remove();
-  $('.keyword-option').remove();  
-  $('.horn-option').remove();  
+  $('.keyword-option').remove();
+  $('.horn-option').remove();
   Images.allPic = [];
   Images.readJson($whereToGo);
 })
@@ -89,7 +89,7 @@ $('#keyword-search').on('change', function(){
 
 $('#horn-search').on('change', function(){
   let $hornSelection = parseInt($(this).val());
-  $('main div').hide();  
+  $('main div').hide();
   for (let i = 0; i < Images.allPic.length; i++){
     if (Images.allPic[i].horns === $hornSelection) {
       $(`div[class="${Images.allPic[i].keyword}"]`).show()  
