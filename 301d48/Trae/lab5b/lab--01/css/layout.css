@@ -1,0 +1,239 @@
+@media(min-width: 480px){
+
+    .main {
+    display: grid;
+    grid-template-rows: 75px 150px 125px 125px 240px 240px 80px;
+    grid-auto-columns: 250px 250px;
+    }    
+    
+    [class *= col-] {
+        background-color: blueviolet;
+    } 
+        
+    #a {
+        grid-column: 1/3;
+        grid-row-start: 1;
+        background-color: rgb(43, 46, 226);
+    
+    }
+    
+    #b {
+        grid-column: 1/3;
+        grid-row-start: 2;
+        background-color: rgb(43, 189, 226);
+    
+    }
+    
+    #c {
+        grid-column: 1/3;
+        grid-row-start: 3;
+        background-color: rgb(43, 226, 171);
+    
+    }
+    
+    #d {
+        grid-column: 1/3;
+        grid-row-start: 4;    
+        background-color: rgb(43, 226, 83);
+    
+    
+    }
+    #e{
+        grid-column: 1/2;
+        grid-row-start: 5;
+        background-color: rgb(226, 43, 104);
+    
+    }
+    
+    #f {
+        grid-column: 2/3;
+        grid-row-start: 5;
+        background-color: rgb(226, 43, 43);
+    
+    
+    }
+    
+    #g {
+        grid-column:1/2; 
+        grid-row-start: 6;    
+        background-color: rgb(43, 226, 43);
+    
+    
+    }
+    
+    #h{
+        grid-column: 2/3;
+        grid-row-start: 6;
+        background-color: rgb(43, 70, 226);
+    
+    
+    }
+    
+    #i {
+        grid-column: 1/3;
+        grid-row-start: 7;
+        background-color: rgb(226, 43, 89);
+    
+    }
+    }
+    
+     @media(min-width:550px) and (max-width: 767px) {
+    
+    .main {
+        display: grid;
+        grid-template-rows: 100px 100px 200px 250px 150px;
+        grid-auto-columns: 190px 190px 190px 190px;
+        
+        }
+        
+        #a {
+            grid-column: 1/5;
+            grid-row-start: 1;
+            background-color: rgb(110, 226, 43);
+        
+        }
+        
+        #b {
+            grid-column: 1/5;
+            grid-row: 2;
+            background-color: rgb(205, 43, 226);
+        
+        }
+        
+        #c {
+            grid-column: 1/3;
+            grid-row-start: 3;
+            background-color: rgb(43, 226, 104);
+        
+        }
+        
+        #d {
+            grid-column: 3/5;
+            grid-row-start: 3;    
+            background-color: rgb(226, 43, 134);
+        
+        
+        }
+        #e{
+            grid-column: 1;
+            grid-row: 4;
+            background-color: rgb(214, 226, 43);
+        
+        }
+        
+        #f {
+            grid-column: 2;
+            grid-row: 4;
+            background-color: rgb(43, 226, 98);
+        
+        
+        }
+        
+        #g {
+            grid-column:3; 
+            grid-row: 4;    
+            background-color: rgb(46, 43, 226);
+        
+        
+        }
+        
+        #h{
+            grid-column: 4;
+            grid-row-start: 4;
+            background-color: rgb(226, 43, 43);
+        
+        
+        }
+        
+        #i {
+            grid-column: 1/5;
+            grid-row: 5;
+            background-color: rgb(226, 147, 43);
+        
+        }
+            
+    } 
+    
+    @media(min-width: 768px) {
+    
+    .main {
+    display: grid;
+    grid-template-rows: 100px 200px 250px 150px;
+    grid-auto-columns: 200px 190px 190px 190px 190px;
+    
+    }
+    
+    #a {
+        grid-column: 1/6;
+        grid-row-start: 1;
+        background-color: rgb(226, 43, 43);
+    
+    }
+    
+    #b {
+        grid-column: 1;
+        grid-row: 2/6;
+        background-color: rgb(125, 226, 43);
+    
+    }
+    
+    #c {
+        grid-column: 2/4;
+        grid-row-start: 2;
+        background-color: rgb(211, 43, 226);
+    
+    }
+    
+    #d {
+        grid-column: 4/6;
+        grid-row-start: 2;    
+        background-color: rgb(43, 55, 226);
+    
+    
+    }
+    #e{
+        grid-column: 2;
+        grid-row: 3;
+        background-color: rgb(113, 43, 226);
+    
+    }
+    
+    #f {
+        grid-column: 3;
+        grid-row: 3;
+        background-color: rgb(208, 226, 43);
+    
+    
+    }
+    
+    #g {
+        grid-column:4; 
+        grid-row: 3;    
+        background-color: rgb(226, 43, 217);
+    
+    
+    }
+    
+    #h{
+        grid-column: 5;
+        grid-row-start: 3;
+        background-color: rgb(43, 226, 180);
+    
+    
+    }
+    
+    #i {
+        grid-column: 2/6;
+        grid-row: 4;
+        background-color: rgb(98, 43, 226);
+    
+    }
+    
+    
+    @media(min-width: 960px) {
+        div {
+            background-color: blueviolet;
+        }
+    } 
+
+}

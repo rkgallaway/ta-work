@@ -1,0 +1,77 @@
+.cell {
+  max-width: 960px;
+  border: 1px solid darkgray;
+  /* float: left; */
+  text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 100s infinite;
+  background-color: currentColor;
+    }
+    @supports (background-blend-mode: overlay) {
+      .cell {
+          background-image: linear-gradient(45deg, white 10%, black 90%);
+          background-blend-mode: overlay;
+      }
+    }
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  margin-left: calc((100% - 960px) /2);
+  display: grid;
+  grid-template-columns: 200px 190px 190px 190px 190px;
+  grid-template-rows: 100px 200px 250px 150px;
+}
+
+@media(min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    margin-left: calc((100% - 800px) /2);
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100px 200px 200px 200px 200px 150px;
+  }
+}
+@media(min-width: 480px) and (max-width: 767px) {
+    
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    margin-left: calc((100% - 480px) /2);
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+}
+}
+
+/* Courtesey of:
+UI with rotating color scheme
+A PEN BY Vincent De Oliveira */
+
+.cell {
+  color: hsl(324, 70%, 45%);
+  animation: wheelHueColor 100s infinite;
+  background-color: currentColor;
+}
+@supports (background-blend-mode: overlay) {
+  .cell {
+      background-image: linear-gradient(45deg, white 10%, black 90%);
+      background-blend-mode: overlay;
+  }
+}
+
+@keyframes wheelHueColor {
+from, to { color: hsl(324, 70%, 45%); }
+10%      { color: hsl(360, 65%, 45%); }
+20%      { color: hsl( 36, 80%, 45%); }
+30%      { color: hsl( 72, 75%, 35%); }
+40%      { color: hsl(108, 65%, 35%); }
+50%      { color: hsl(144, 75%, 35%); }
+60%      { color: hsl(180, 75%, 35%); }
+70%      { color: hsl(216, 60%, 45%); }
+80%      { color: hsl(252, 65%, 50%); }
+90%      { color: hsl(288, 60%, 40%); }
+}
