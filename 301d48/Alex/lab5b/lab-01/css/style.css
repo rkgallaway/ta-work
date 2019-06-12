@@ -1,0 +1,139 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cell {
+  border: 1px solid black;
+  display: grid;
+}
+
+.container {
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#a {
+  background: red;
+  width: 100%;
+  height: 75px;
+}
+
+#b {
+  background: yellow;
+  width: 100%;
+  height: 150px;
+}
+
+#c {
+  background: blue;
+  width: 100%;
+  height: 125px;
+}
+
+#d {
+  background: gold;
+  width: 100%;
+  height: 125px;
+}
+
+#e {
+  background: deeppink;
+  width: 50%;
+  height: 250px;
+}
+
+#f {
+  background: pink;
+  width: 50%;
+  height: 250px;
+}
+
+#g {
+  background: brown;
+  width: 50%;
+  height: 250px;
+}
+
+#h {
+  background: green;
+  width: 50%;
+  height: 250px;
+}
+
+#i {
+  background: purple;
+  width: 100%;
+  height: 80px;
+}
+
+.cell:hover {
+  background: gray!important;
+}
+
+@media(min-width: 768px) {
+  .cell {
+    float: left;
+  }
+  
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  #a {
+    background: red;
+    width: 100%;
+    height: 100px;
+  }
+  
+  #b {
+    background: yellow;
+    width: 20.84%;
+    height: 600px;
+  }
+  
+  #c {
+    background: blue;
+    width: 39.58%;
+    height: 200px;
+  }
+  
+  #d {
+    background: gold;
+    width: 39.58%;
+    height: 200px;
+  }
+  
+  #e {
+    background: green;
+    width: 19.79%;
+    height: 250px;
+  }
+  
+  #f {
+    background: pink;
+    width: 19.79%;
+    height: 250px;
+  }
+  
+  #g {
+    background: brown;
+    width: 19.79%;
+    height: 250px;
+  }
+  
+  #h {
+    background: deeppink;
+    width: 19.79%;
+    height: 250px;
+  }
+  
+  #i {
+    background: purple;
+    width: 79.16%;
+    height: 150px;
+  }
+}
