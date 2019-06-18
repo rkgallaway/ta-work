@@ -1,0 +1,17 @@
+* {
+    font-family: monospace;
+    text-align: center;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5);
+    grid-template-rows:  minmax(100px, auto);
+    border: 2px solid black;
+    
+   
+}
+
+

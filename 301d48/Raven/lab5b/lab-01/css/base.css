@@ -1,0 +1,18 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 480px;
+}
+
+[class *= 'col-'] {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}

@@ -1,0 +1,115 @@
+
+@media(min-width: 768px){
+    #cellA {
+        background-color:rgb(25,25,112);
+   
+    }
+    
+    #cellB {
+        background-color:rgb(176,196,222);
+    
+    }
+
+    #cellC{
+        background-color:rgb(0,0,139);
+    }
+    #cellD{
+        background-color: rgb(65,105,225);
+    }
+    #cellE{
+        background-color:rgb(0,191,255);
+    }
+    #cellH{
+        background-color:rgb(135,206,235);
+    }
+    
+    #cellI{
+        background-color:rgb(176,224,230);
+    }
+    #cellF{
+        background-color:rgb(95,158,160);
+    }
+    #cellG{
+        background-color:rgb(0,255,255);
+    }
+ 
+}
+/* tablet */
+@media(min-width:550px) and (max-width:767px) {
+    
+        #cellA {
+            background-color:rgb(47,79,79);
+        
+        }
+        
+        #cellB {
+            background-color:rgb(112,128,144);
+        
+        }
+        
+        #cellC {
+            background-color:rgb(105,105,105);
+        
+        }
+        
+        #cellD {
+            background-color:rgb(128,128,128);
+        
+        
+        }
+        #cellE{
+            background-color:rgb(169,169,169);
+        
+        }
+        
+        #cellF {
+            background-color:rgb(220,220,220);
+        }
+        
+        #cellG {
+            background-color:rgb(147,112,219);
+        }
+        
+        #cellH{
+            background-color:rgb(102,51,153);
+        }
+        
+        #cellI {
+            background-color:rgb(221,160,221);
+        }
+            
+    } 
+/* phone */
+@media(min-width: 480px) and (max-width:549px) {
+    #cellA {
+        background-color:rgb(0,255,255);
+    }
+    
+    #cellB {
+        background-color:rgb(0,128,128);
+    }
+
+    #cellC{
+        background-color:rgb(102,205,170);
+    }
+    #cellD{
+        background-color:rgb(107,142,35);
+    }
+    #cellE{
+        background-color:rgb(0,100,0);
+    }
+    #cellH{
+        background-color:rgb(60,179,113);
+    }
+    
+    #cellI{
+        background-color:rgb(0,250,154);
+    }
+    #cellF{
+        background-color:rgb(50,205,50);
+    }
+    #cellG{
+        background-color:rgb(173,255,47);
+    }
+ 
+}
