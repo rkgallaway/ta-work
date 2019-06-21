@@ -1,240 +1,132 @@
 'use strict';
 
-/* -----------------------------------------------------------------------------------------------
+/* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
-Write a function named countNumberOfElements that, given an array as input, uses reduce to count the number of elements in the array.
+Write a function named greeting that takes in a string and returns the string in all uppercase letters.
 
-Note: You may not use thearray's built-in length property.
+Then, write a function named speaker that takes in a string and a callback function. The speaker function should return the string in all uppercase letters only by invoking the callback.
 ------------------------------------------------------------------------------------------------ */
 
-const countNumberOfElements = (arr) => {
-  const notIncluded = arr.reduce((acc, value) => value)
-  return notIncluded;
-}
+const greeting = (word) => {
+  return word.toUpperCase();
+};
+
+const speaker = (message, callback) => {
+  return callback(message);
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named returnNames that, given the Star Wars data, below, uses reduce to return an array containing the names of the characters.
+Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
+
+Then, write a function named addNumbers that takes in four arguments:
+  - A number to be added to an array
+  - An array into which the number should be added
+  - The number of times the number should be added
+  - A callback function to use to add the numbers to the array (Hint: you already defined it)
+
+Within the addNumbers function, invoke the callback function as many times as necessary, based on the third argument of the addNumbers function.
+
+Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
-let starWarsData = [{
-  name: 'Luke Skywalker',
-  height: '172',
-  mass: '77',
-  hair_color: 'blond',
-  skin_color: 'fair',
-  eye_color: 'blue',
-  birth_year: '19BBY',
-  gender: 'male',
-},
-{
-  name: 'C-3PO',
-  height: '167',
-  mass: '75',
-  hair_color: 'n/a',
-  skin_color: 'gold',
-  eye_color: 'yellow',
-  birth_year: '112BBY',
-  gender: 'n/a'},
-{
-  name: 'R2-D2',
-  height: '96',
-  mass: '32',
-  hair_color: 'n/a',
-  skin_color: 'white, blue',
-  eye_color: 'red',
-  birth_year: '33BBY',
-  gender: 'n/a'
-},
-{
-  name: 'Darth Vader',
-  height: '202',
-  mass: '136',
-  hair_color: 'none',
-  skin_color: 'white',
-  eye_color: 'yellow',
-  birth_year: '41.9BBY',
-  gender: 'male'
-},
-{
-  name: 'Leia Organa',
-  height: '150',
-  mass: '49',
-  hair_color: 'brown',
-  skin_color: 'light',
-  eye_color: 'brown',
-  birth_year: '19BBY',
-  gender: 'female'
-}];
+const addValues = (arr, value) => {
+  arr.push(value);
+};
 
-const returnNames = (arr) => {
-  let getName = [];
-  arr.reduce((acc, val) => {
-    getName.push(val.name);
-    return acc
-  }, 0);
-  return getName;
+const addNumbers = (num, arr, times, callback) => {
+  for(let i = 0; i < times; i++) {
+    callback(arr, num)
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named reversedString that takes in a string and returns a string with the letters in reverse order.
+Write a function named removeOne that takes in a number and an array. If the number divided by three has a remainder of two, pop one element off of the array.
 
-Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
+Hint: you may want to look into the modulo operation.
+
+Then, write a function named removeElements that takes in an array and a callback. This function should use a for loop to iterate over the array and invoke the callback once for each element in the array.
+
+Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
-const reversedString = (str) => {
-  return str.split('').reduce((element, value) => value + element, '');
+const removeOne = (num, arr) => {
+  if (num % 3 === 2){
+    arr.pop();
+  }
 };
 
-
-// return str.split("").reduce((rev, char)=> char + rev, '');
+const removeElements = (arr, callback) => {
+  for (let i = 0; i < arr.length; i++){
+    callback(arr[i], arr);
+  }
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named countNumberOfChildren that, given the array of characters, below, uses reduce to return the total number of children in the data set.
+Write a function named removeWithForEach that produces the same output as challenge 3, but uses forEach.
 ------------------------------------------------------------------------------------------------ */
 
-const characters = [
-  {
-    name: 'Eddard',
-    spouse: 'Catelyn',
-    children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
-    house: 'Stark',
-  },
-  {
-    name: 'Jon',
-    spouse: 'Lysa',
-    children: ['Robin'],
-    house: 'Arryn',
-  },
-  {
-    name: 'Cersei',
-    spouse: 'Robert',
-    children: ['Joffrey', 'Myrcella', 'Tommen'],
-    house: 'Lannister',
-  },
-  {
-    name: 'Daenarys',
-    spouse: 'Khal Drogo',
-    children: ['Drogon', 'Rhaegal', 'Viserion'],
-    house: 'Targaryen',
-  },
-  {
-    name: 'Mace',
-    spouse: 'Alerie',
-    children: ['Margaery', 'Loras'],
-    house: 'Tyrell',
-  },
-  {
-    name: 'Sansa',
-    spouse: 'Tyrion',
-    house: 'Stark',
-  },
-  {
-    name: 'Jon',
-    spouse: null,
-    house: 'Snow',
-  },
-];
-
-const countNumberOfChildren = (arr) =>{
-  let answerChildren = [];
-  arr.reduce((acc, val, index) => {
-    return answerChildren = val.children + index;
-  }, 0);
+const removeWithForEach = (arr, callback) => {
+  arr.forEach((item) => callback(item,arr));
+  return arr;
 };
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function that, given an array of numbers as input, uses reduce to calculate the array's average value.
+Write a function named removeWithAnon that produces the same output as challenges 3 and 4.
 
-Hint: The accumulator should begin as { count: 0, sum: 0 }
+This function should use forEach again, but rather than taking in a callback as an argument, define an anonymous function as the argument to forEach.
+
+This anonymous function should accept up to three arguments: the element, the index, and the array.
 ------------------------------------------------------------------------------------------------ */
 
-const calculateAverage = (arr) => {
+const removeWithAnon = (arr) => {
   // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named countPrimeNumbers that, given an array elements as input, uses reduce to count the number of elements that are prime numbers.
+Write a function named createList that takes in an array of the current store intentory.
 
-You are welcome to use the provided isPrime function.
+The inventory is formatted like this:
+[
+  { name: 'apples', available: true },
+  { name: 'pears', available: true },
+  { name: 'oranges', available: false },
+  { name: 'bananas', available: true },
+  { name: 'blueberries', available: false }
+]
+
+This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
-const isPrime = (value) => {
-  for (let i = 2; i < value; i++) {
-    if (value % i === 0) {
-      return false;
-    }
-  }
-  return value > 1;
-};
-
-const countPrimeNumbers = (arr) => {
+const createList = (availableItems) => {
   // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 7 - Stretch Goal
+CHALLENGE 7
 
-Write a function named extractState that, given the snorlaxData, below, uses reduce to return the object whose 'name' property matches the given string.
+Write a function named fizzbuzz that takes in an array of numbers.
 
-If the input array does not have a stat with that specific name, the function should return null.
+Iterate over the array using forEach to determine the output based on several rules:
+  - If a number is divisible by 3, add the word "Fizz" to the output array.
+  - If the number is divisible by 5, add the word "Buzz" to the output array.
+  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
+  - Otherwise, add the number to the output array.
+
+Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const snorlaxData = {
-  stats: [
-    {
-      stat: {
-        url: 'https://pokeapi.co/api/v2/stat/6/',
-        name: 'speed',
-      },
-      effort: 5,
-      baseStat: 30,
-    },
-    {
-      stat: {
-        url: 'https://pokeapi.co/api/v2/stat/5/',
-        name: 'special-defense',
-      },
-      effort: 2,
-      baseStat: 110,
-    },
-    {
-      stat: {
-        url: 'https://pokeapi.co/api/v2/stat/4/',
-        name: 'special-attack',
-      },
-      effort: 9,
-      baseStat: 65,
-    },
-  ],
-  name: 'snorlax',
-  weight: 4600,
-};
-
-const extractStat = (statName, arr) => {
-  // Solution code here...
-};
-
-/* ------------------------------------------------------------------------------------------------
-CHALLENGE 8 - Stretch Goal
-
-Write a function named extractChildren that, given the array of characters from challenge 4, accomplishes the following:
-
-1) Uses filter to return an array of the characters that contain the letter 'a' in their name
-
-2) Then, uses reduce to return an array of all the children's names in the filtered array
------------------------------------------------------------------------------------------------- */
-
-const extractChildren = (arr) => {
+const fizzbuzz = (arr) => {
   // Solution code here...
 };
 
@@ -243,57 +135,60 @@ TESTS
 
 All the code below will verify that your functions are working to solve the challenges.
 
-DO NOT CHANGE anay of the below code.
+DO NOT CHANGE any of the below code.
 
-Run your tests from the console: jest challenges-09.test.js
+Run your tests from the console: jest challenges-01.test.js
+
 ------------------------------------------------------------------------------------------------ */
 
 describe('Testing challenge 1', () => {
-  test('It should return the length of the array', () => {
-    expect(countNumberOfElements([1, 2, 3, 4, 5])).toStrictEqual(5);
+  test('It should return the message with all uppercase characters', () => {
+    expect(speaker('hello 301 students!', greeting)).toStrictEqual('HELLO 301 STUDENTS!');
   });
 });
 
 describe('Testing challenge 2', () => {
-  test('It should return an array continaing the names of the characters', () => {
-    expect(returnNames(starWarsData)).toStrictEqual([ 'Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa' ]);
-    expect(returnNames(starWarsData).length).toStrictEqual(5);
+  test('It should add the number 8 to the array five times', () => {
+    expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
+    expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
   });
 });
 
 describe('Testing challenge 3', () => {
-  test('It should return the string with the characters in reverse order', () => {
-    expect(reversedString('Code 301')).toStrictEqual('103 edoC');
+  test('It should remove three elements from the array', () => {
+    expect(removeElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne)).toStrictEqual([1, 2, 3, 4, 5, 6, 7]);
+    expect(removeElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne).length).toStrictEqual(7);
   });
 });
 
 describe('Testing challenge 4', () => {
-  test('It should return the total number of children', () => {
-    expect(countNumberOfChildren(characters)).toStrictEqual(14);
+  test('It should remove three elements from the array', () => {
+    expect(removeWithForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne)).toStrictEqual([1, 2, 3, 4, 5, 6, 7]);
+    expect(removeWithForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne).length).toStrictEqual(7);
   });
 });
 
 xdescribe('Testing challenge 5', () => {
-  test('It should return the average of the numbers in the array', () => {
-    expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
+  test('It should remove three elements from the array', () => {
+    expect(removeWithAnon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toStrictEqual([1, 2, 3, 4, 5, 6, 7]);
+    expect(removeWithAnon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).length).toStrictEqual(7);
   });
 });
 
-describe('Testing challenge 6', () => {
-  test('It should return a count of the prime numbers in the array', () => {
-    expect(countPrimeNumbers([1, 2, 13, 64, 45, 56, 17, 8])).toStrictEqual(3);
+xdescribe('Testing challenge 6', () => {
+  const inventory = [{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }];
+
+  test('It should only add the available items to the list', () => {
+    expect(createList(inventory)).toStrictEqual(['apples', 'pears', 'bananas']);
+    expect(createList(inventory).length).toStrictEqual(3);
   });
 });
 
 xdescribe('Testing challenge 7', () => {
-  test('It should return any stats that match the input', () => {
-    expect(extractStat('speed', snorlaxData.stats)).toStrictEqual({ stat: { url: 'https://pokeapi.co/api/v2/stat/6/', name: 'speed' }, effort: 5, baseStat: 30 });
-  });
-});
+  const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
-xdescribe('Testing challenge 8', () => {
-  test('It should return an array containing the names of the children', () => {
-    expect(extractChildren(characters)).toStrictEqual([ 'Robb', 'Sansa', 'Arya', 'Bran', 'Rickon', 'Drogon', 'Rhaegal', 'Viserion', 'Margaery', 'Loras' ]);
-    expect(extractChildren(characters).length).toStrictEqual(10);
+  test('It should print out messages or numbers', () => {
+    expect(fizzbuzz(inputs)).toStrictEqual([1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz', 16]);
+    expect(fizzbuzz(inputs).length).toStrictEqual(16);
   });
 });
