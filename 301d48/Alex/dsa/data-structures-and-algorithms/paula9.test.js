@@ -3,130 +3,186 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
-Write a function named greeting that takes in a string and returns the string in all uppercase letters.
+You friend Pat has a chain of stores around the greater Seattle area. He specializes in selling salmon cookies. Pat has data for the hourly sales of cookies per hour for each store. He wants to create an array of the total number of cookies sold per hour for all of his stores combined.
 
-Then, write a function named speaker that takes in a string and a callback function. The speaker function should return the string in all uppercase letters only by invoking the callback.
+Write a function named grandTotal that adds up the cookies sales for each hour of operation for all of the stores combined. For example, the first element in the hourlySales array should be the sum of the cookies sold in the 9:00 a.m. hour at all five stores combined.
+
+For this example, the total at 9:00 a.m. is 17 + 26 + 7 + 5 + 33, or 88 total cookies.
+
+Return the array of the total number of cookies sold per hour for all of the stores combined.
 ------------------------------------------------------------------------------------------------ */
 
-const greeting = (word) => {
-  return word.toUpperCase();
-};
+const hoursOpen = ['9 a.m.', '10 a.m.', '11 a.m.', '12 p.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.', '6 p.m.', '7 p.m.', '8 p.m.'];
 
-const speaker = (message, callback) => {
-  return callback(message);
+const firstPike = [17, 18, 23, 24, 24, 12, 13, 27, 30, 20, 24, 18];
+const seaTac = [26, 5, 5, 59, 23, 39, 38, 20, 30, 7, 59, 43];
+const seattleCenter = [7, 14, 19, 22, 15, 4, 23, 27, 28, 23, 1, 29];
+const capHill = [5, 85, 58, 51, 50, 13, 33, 32, 47, 94, 31, 62];
+const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
+
+const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
+
+const grandTotal = (stores) => {
+    let hourlySales = [];
+    for(let i = 0; i < hoursOpen.length; i++){
+      let total = 0;
+      for(let j = 0; j < stores.length; j++){
+        total = total + stores[j][i];
+      }
+      hourlySales.push(total);
+    }
+    return hourlySales;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
+Pat has decided that he would also like to organize his data as objects containing the number of cookies sold per hour and the time.
 
-Then, write a function named addNumbers that takes in four arguments:
-  - A number to be added to an array
-  - An array into which the number should be added
-  - The number of times the number should be added
-  - A callback function to use to add the numbers to the array (Hint: you already defined it)
+Here is sample data for the 9:00 sales: { sales: '88 cookies', time: '9 a.m.' }.
 
-Within the addNumbers function, invoke the callback function as many times as necessary, based on the third argument of the addNumbers function.
-
-Return the modified array.
+Write a function named salesData that uses forEach to iterate over the hourlySales array and create an object for each hour. Return an array of the formatted data.
 ------------------------------------------------------------------------------------------------ */
 
-const addValues = (arr, value) => {
-  arr.push(value);
-};
-
-const addNumbers = (num, arr, times, callback) => {
-  for(let i = 0; i < times; i++) {
-    callback(arr, num)
-  }
-};
+const salesData = (hours, data) => {
+    let formattedDataArray = [];
+    hours.forEach((arr, i) => {
+      let stores = {};
+      stores.sales = data[i] + ' cookies';
+      stores.time = hours[i];
+      formattedDataArray.push(stores);
+    })
+    return formattedDataArray;
+  };
+  
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named removeOne that takes in a number and an array. If the number divided by three has a remainder of two, pop one element off of the array.
-
-Hint: you may want to look into the modulo operation.
-
-Then, write a function named removeElements that takes in an array and a callback. This function should use a for loop to iterate over the array and invoke the callback once for each element in the array.
-
-Return the modified array.
+Write a function named howManyTreats that will return the quantity of treats you need to pick up from the pet store today from this array.
 ------------------------------------------------------------------------------------------------ */
 
-const removeOne = (num, arr) => {
-  if (num % 3 === 2){
-    arr.pop();
+const errands = [
+  { store: 'Grocery store',
+    items: [ { name: 'Eggs', quantity: 12 }, { name: 'Milk', quantity: 1 }, { name: 'Apples', quantity: 3 }]
+  },
+  { store: 'Drug store',
+    items: [ { name: 'Toothpaste', quantity: 1 }, { name: 'Toothbrush', quantity: 3 }, { name: 'Mouthwash',quantity: 1 } ]
+  },
+  { store: 'Pet store',
+    items: [ { name: 'Cans of food', quantity: 8 }, { name: 'Treats', quantity: 24 }, { name: 'Leash', quantity: 1 } ]
   }
-};
+];
 
-const removeElements = (arr, callback) => {
-  for (let i = 0; i < arr.length; i++){
-    callback(arr[i], arr);
-  }
-};
+const howManyTreats = (arr) => {
+        let total = 0;
+        arr.map(errand => {
+          let item = errand.items;
+          item.map(quantity => {
+            return(quantity.name === 'Treats')?total += quantity.quantity:total=total;
+             });
+        });
+        return total;
+      };
+      
+  
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named removeWithForEach that produces the same output as challenge 3, but uses forEach.
+Write a function named battleship that accepts a 2D array and two numbers: a row coordinate and a column coordinate.
+
+Return "hit" or "miss" depending on if there's part of a boat at that position in the array. Assume the array has only one of two values at each index. '#' for part of a boat, or ' ' for open water.
+
+Here is a sample board:
+[
+  ['#', ' ', '#', ' '],
+  ['#', ' ', '#', ' '],
+  ['#', ' ', ' ', ' '],
+  [' ', ' ', '#', '#'],
+]
+
+The top row of the board is considered row zero and row numbers increase as they go down.
 ------------------------------------------------------------------------------------------------ */
 
-const removeWithForEach = (arr, callback) => {
-  arr.forEach((item) => callback(item,arr));
-  return arr;
+const battleship = (board, row, col) => {
+  return(board[row][col] === '#')?'hit':'miss';
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named removeWithAnon that produces the same output as challenges 3 and 4.
+Write a function named calculateProduct that takes in a two-dimensional array of numbers, multiplies all of the numbers in each array, and returns the final product. This function should work for any number of inner arrays.
 
-This function should use forEach again, but rather than taking in a callback as an argument, define an anonymous function as the argument to forEach.
-
-This anonymous function should accept up to three arguments: the element, the index, and the array.
+For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 ------------------------------------------------------------------------------------------------ */
 
-const removeWithAnon = (arr) => {
-  // Solution code here...
-};
+const calculateProduct = (numbers) => {
+    let product = numbers.map(arr => {
+      return arr.reduce((a,b) => {
+        return a * b;
+      }, 1);
+    });
+    return product.reduce((a, b) => {
+      return a * b;
+    });
+  };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named createList that takes in an array of the current store intentory.
+Write a function named averageDailyTemperature that accepts a two-dimensional array representing average daily temperatures grouped week-by-week.
 
-The inventory is formatted like this:
-[
-  { name: 'apples', available: true },
-  { name: 'pears', available: true },
-  { name: 'oranges', available: false },
-  { name: 'bananas', available: true },
-  { name: 'blueberries', available: false }
-]
-
-This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
+Calculate the average daily temperature during that entire period. Your output should be a single number. Write your function so it could accept an array with any number of weeks given to it.
 ------------------------------------------------------------------------------------------------ */
 
-const createList = (availableItems) => {
+// Real daily average temperatures for Seattle, October 1-28 2017
+const weeklyTemperatures = [
+  [66, 64, 58, 65, 71, 57, 60],
+  [57, 65, 65, 70, 72, 65, 51],
+  [55, 54, 60, 53, 59, 57, 61],
+  [65, 56, 55, 52, 55, 62, 57],
+];
+
+const averageDailyTemperature = (weather) => {
   // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
 
-Write a function named fizzbuzz that takes in an array of numbers.
+Write a function named lowestWeeklyAverage that accepts a two-dimensional array of daily temperatures grouped week-by-week.
 
-Iterate over the array using forEach to determine the output based on several rules:
-  - If a number is divisible by 3, add the word "Fizz" to the output array.
-  - If the number is divisible by 5, add the word "Buzz" to the output array.
-  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
-  - Otherwise, add the number to the output array.
+Calculate the average temperature for each week and return the value of the lowest weekly average temperature.
 
-Return the resulting output array.
+For example, in the data set below, the lowest weekly average is 46, which is the average of the temperatures in week 2. All other weeks have average temperatures that are greater than 46.
 ------------------------------------------------------------------------------------------------ */
 
-const fizzbuzz = (arr) => {
+let lowestWeeklyTemperatureData = [
+  [33, 64, 58, 65, 71, 57, 60],
+  [40, 45, 33, 53, 44, 59, 48],
+  [55, 54, 60, 53, 59, 57, 61],
+  [65, 56, 55, 52, 55, 62, 57],
+];
+
+const lowestWeeklyAverage = (weather) => {
+  // Solution code here...
+};
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 8
+
+Write a function called excel that accepts a string representing rows and columns in a table.
+
+Rows are seperated by newline "\n" characters. Columns are seperated by commas. For example, '1,1,1\n4,4,4\n9,9,9' represents a 3x3 table.
+
+The function should parse the string as rows and columns and compute the sum of the values for each row. Return an array with the sum of the values in each row.
+
+For example, excel('1,1,1\n4,4,4\n9,9,9') returns [3, 12, 27].
+------------------------------------------------------------------------------------------------ */
+
+const excel = (str) => {
   // Solution code here...
 };
 
@@ -137,58 +193,96 @@ All the code below will verify that your functions are working to solve the chal
 
 DO NOT CHANGE any of the below code.
 
-Run your tests from the console: jest challenges-01.test.js
+Run your tests from the console: jest challenge-12.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
+
 describe('Testing challenge 1', () => {
-  test('It should return the message with all uppercase characters', () => {
-    expect(speaker('hello 301 students!', greeting)).toStrictEqual('HELLO 301 STUDENTS!');
+  test('It should add the hourly totals array', () => {
+    expect(grandTotal(cookieStores)).toStrictEqual([88, 153, 252, 286, 139, 161, 145, 232, 276, 207, 161, 169]);
   });
 });
 
 describe('Testing challenge 2', () => {
-  test('It should add the number 8 to the array five times', () => {
-    expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
-    expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
+  test('It should create an object of data for each store', () => {
+    expect(salesData(hoursOpen, grandTotal(cookieStores))).toStrictEqual([
+      { sales: '88 cookies', time: '9 a.m.' },
+      { sales: '153 cookies', time: '10 a.m.' },
+      { sales: '252 cookies', time: '11 a.m.' },
+      { sales: '286 cookies', time: '12 p.m.' },
+      { sales: '139 cookies', time: '1 p.m.' },
+      { sales: '161 cookies', time: '2 p.m.' },
+      { sales: '145 cookies', time: '3 p.m.' },
+      { sales: '232 cookies', time: '4 p.m.' },
+      { sales: '276 cookies', time: '5 p.m.' },
+      { sales: '207 cookies', time: '6 p.m.' },
+      { sales: '161 cookies', time: '7 p.m.' },
+      { sales: '169 cookies', time: '8 p.m.' }
+    ]);
+
+    expect(salesData(hoursOpen, grandTotal(cookieStores)).length).toStrictEqual(hoursOpen.length);
   });
 });
 
+
 describe('Testing challenge 3', () => {
-  test('It should remove three elements from the array', () => {
-    expect(removeElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne)).toStrictEqual([1, 2, 3, 4, 5, 6, 7]);
-    expect(removeElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne).length).toStrictEqual(7);
+  test('It should return the number 24', () => {
+    expect(howManyTreats(errands)).toStrictEqual(24);
   });
 });
 
 describe('Testing challenge 4', () => {
-  test('It should remove three elements from the array', () => {
-    expect(removeWithForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne)).toStrictEqual([1, 2, 3, 4, 5, 6, 7]);
-    expect(removeWithForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne).length).toStrictEqual(7);
+  const battleshipData = [
+    ['#', ' ', '#', ' '],
+    ['#', ' ', '#', ' '],
+    ['#', ' ', ' ', ' '],
+    [' ', ' ', '#', '#'],
+  ];
+
+  test('It should return "hit" when it hits a boat', () => {
+    expect(battleship(battleshipData, 0, 0)).toStrictEqual('hit');
+    expect(battleship(battleshipData, 1, 0)).toStrictEqual('hit');
+  });
+
+  test('It should return "miss" when it doesn\'t hit a boat', () => {
+    expect(battleship(battleshipData, 0, 1)).toStrictEqual('miss');
+    expect(battleship(battleshipData, 3, 0)).toStrictEqual('miss');
   });
 });
 
-xdescribe('Testing challenge 5', () => {
-  test('It should remove three elements from the array', () => {
-    expect(removeWithAnon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toStrictEqual([1, 2, 3, 4, 5, 6, 7]);
-    expect(removeWithAnon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).length).toStrictEqual(7);
+describe('Testing challenge 5', () => {
+  test('It should multiply all the numbers together', () => {
+    expect(calculateProduct([[1,2], [3,4], [5,6]])).toStrictEqual(720);
+  });
+
+  test('It should return zero if there are any zeroes in the data', () => {
+    expect(calculateProduct([[2, 3, 4, 6, 0], [4, 3, 7], [2, 4, 6]])).toStrictEqual(0);
+  });
+  test('It should work even if some of the arrays contain no numbers', () => {
+    expect(calculateProduct([[1,2], [], [3,4,5]])).toStrictEqual(120);
   });
 });
 
-xdescribe('Testing challenge 6', () => {
-  const inventory = [{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }];
-
-  test('It should only add the available items to the list', () => {
-    expect(createList(inventory)).toStrictEqual(['apples', 'pears', 'bananas']);
-    expect(createList(inventory).length).toStrictEqual(3);
+describe('Testing challenge 6', () => {
+  test('It should calculate and return the average temperature of the data set', () => {
+    expect(averageDailyTemperature(weeklyTemperatures)).toStrictEqual(60.25);
   });
 });
 
-xdescribe('Testing challenge 7', () => {
-  const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+describe('Testing challenge 7', () => {
+  test('It should return the lowest weekly average temperature within the data set', () => {
+    expect(lowestWeeklyAverage(weeklyTemperatures)).toStrictEqual(57);
+    expect(lowestWeeklyAverage(lowestWeeklyTemperatureData)).toStrictEqual(46);
+  });
+});
 
-  test('It should print out messages or numbers', () => {
-    expect(fizzbuzz(inputs)).toStrictEqual([1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz', 16]);
-    expect(fizzbuzz(inputs).length).toStrictEqual(16);
+describe('Testing challenge 8', () => {
+  test('It should return the total count for each row', () => {
+    let result = excel('1,1,1\n4,4,4\n9,9,9');
+    expect(result.length).toStrictEqual(3);
+    expect(result[0]).toStrictEqual(3);
+    expect(result[1]).toStrictEqual(12);
+    expect(result[2]).toStrictEqual(27);
   });
 });
