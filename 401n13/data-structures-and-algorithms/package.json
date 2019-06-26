@@ -1,0 +1,18 @@
+{
+  "name": "3-code-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "watch": "jest --watchall"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.7.1",
+    "quokka": "0.0.7"
+  },
+  "devDependencies": {}
+}
