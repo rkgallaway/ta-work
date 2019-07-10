@@ -3,8 +3,7 @@
 let LinkedList = require('../linked-list.js');
 
 describe('Linked List tests', () => {
-
-  it('Can successfully instantiate an empty linked list', ()=> {
+  it('Can successfully instantiate an empty linked list', () => {
     let list = new LinkedList();
     expect(list.head).toBeNull();
     expect(list instanceof LinkedList).toBeTruthy();
@@ -42,7 +41,7 @@ describe('Linked List tests', () => {
     expect(list.includes(3)).toBeTruthy();
     expect(list.includes(4)).toBeFalsy();
   });
-  it('Will return false when searching for a value in the linked list that does not exist', () =>{
+  it('Will return false when searching for a value in the linked list that does not exist', () => {
     let list = new LinkedList();
     list.insert(1);
     list.insert(2);
@@ -63,7 +62,7 @@ describe('Linked List tests', () => {
 /////////////////////////////Code Challenge 6 /////////////////////////////
 
 describe('Linked List tests continued - 401 js Code Challenge 6', () => {
-  it('Can successfully add a node to the end of the linked list', ()  => {
+  it('Can successfully add a node to the end of the linked list', () => {
     let list = new LinkedList();
     list.append(1);
     list.append(2);
@@ -79,9 +78,11 @@ describe('Linked List tests continued - 401 js Code Challenge 6', () => {
     expect(list.head.value).toEqual(1);
     expect(list.print()).toEqual([1, 2, 3, 4]);
   });
-  it('Can successfully insert a node before a node located in the middle of a linked list', () =>{
+  it('Can successfully insert a node before a node located in the middle of a linked list', () => {
     let list = new LinkedList();
-    expect(list.insertBefore(2, 22)).toEqual('Exception: value not found, newValue not inserted');
+    expect(list.insertBefore(2, 22)).toEqual(
+      'Exception: value not found, newValue not inserted'
+    );
     list.append(1);
     list.append(3);
     list.append(3);
@@ -90,16 +91,20 @@ describe('Linked List tests continued - 401 js Code Challenge 6', () => {
     list.insertBefore(2, 4);
     expect(list.print()).toEqual([1, 3, 3, 4, 2, 3]);
   });
-  it('Can successfully insert a node before the first node of a linked list', () =>{
+  it('Can successfully insert a node before the first node of a linked list', () => {
     let list = new LinkedList();
-    expect(list.insertBefore(2, 22)).toEqual('Exception: value not found, newValue not inserted');
+    expect(list.insertBefore(2, 22)).toEqual(
+      'Exception: value not found, newValue not inserted'
+    );
     list.append(1);
     list.insertBefore(1, 11);
     expect(list.head.value).toEqual(11);
   });
-  it('Can successfully insert a node after a node located in the middle of a linked list', () =>{
+  it('Can successfully insert a node after a node located in the middle of a linked list', () => {
     let list = new LinkedList();
-    expect(list.insertAfter(2, 22)).toEqual('Exception: value not found, newValue not inserted');
+    expect(list.insertAfter(2, 22)).toEqual(
+      'Exception: value not found, newValue not inserted'
+    );
     list.append(1);
     list.append(3);
     list.append(3);
@@ -108,9 +113,11 @@ describe('Linked List tests continued - 401 js Code Challenge 6', () => {
     list.insertAfter(2, 4);
     expect(list.print()).toEqual([1, 3, 3, 2, 4, 3]);
   });
-  it('Can successfully insert a node after the last node of a linked list', () =>{
+  it('Can successfully insert a node after the last node of a linked list', () => {
     let list = new LinkedList();
-    expect(list.insertBefore(2, 22)).toEqual('Exception: value not found, newValue not inserted');
+    expect(list.insertBefore(2, 22)).toEqual(
+      'Exception: value not found, newValue not inserted'
+    );
     list.append(1);
     list.insertAfter(1, 11);
     expect(list.head.next.value).toEqual(11);
@@ -148,7 +155,9 @@ describe('Linked List tests continued - 401 js Code Challenge 7', () => {
     let list = new LinkedList();
     list.append(1);
     list.append(2);
-    expect(list.kthFromEnd(3)).toEqual('k is greater than length of linked list');
+    expect(list.kthFromEnd(3)).toEqual(
+      'k is greater than length of linked list'
+    );
   });
   it('Where k and the length of the list are the same', () => {
     let list = new LinkedList();
@@ -179,3 +188,13 @@ describe('Linked List tests continued - 401 js Code Challenge 7', () => {
     expect(list.kthFromEnd(2)).toEqual(3);
   });
 });
+
+describe('', () => {
+  it('', () => {
+    let expected = ;
+    let result = ;
+    expect(expected).toEqual(result);
+  });
+});
+
+console.log('varaible', varaible);
